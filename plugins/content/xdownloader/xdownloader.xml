@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension group="content" type="plugin" method="upgrade" version="1.7.0">
+	<name>xDownloader alpha</name>
+	<creationDate>February 2012</creationDate>
+	<author>xrbyte</author>
+	<authorEmail>xrbyte@live.com</authorEmail>
+	<authorUrl>http://www.xrbyte.com</authorUrl>
+	<copyright>Copyright (C) 2012 xrbyte.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPL</license>
+	<version>1.0.1 alpha</version>	
+	<description><![CDATA[
+		<p>xDownloader alpha plugin for Joomla!</p> 
+		<p>Created to hide direct links on downloadable files.</p> 
+		<p>Convert plugin key to the url link in content to download file.</p> 
+		<p>Key syntax: {xdownloader title=[]|groups=[,]|filename=[]|filepath=[]}.</p>
+		<p>Key variables separate by '|'.</p>
+		<p>Variable 'title': optional variable, will be change on the 'filename' variable or file name from 'filepath' variable if 'title' empty or absent from key.</p> 
+		<p>Variable 'groups': optional variable, using to set permission on downloads. Value is the name of groups separate by ','.</p>
+		<p>Variable 'filename': optional variable, set the name of downloadable file, possibly to use different name of original file name.</p> 
+		<p>Variable 'filepath': necessary variable, must be full path of file on the server.</p>
+		<p>Example: Some article content text {xdownloader title=Banana|groups=Registered,Author,Publisher|filename=bananas.jpg|filepath=/etc/www/images/sampledata/fruitshop/bananas_2.jpg}</p> 
+		<p>Plugin require installed xDownloader alpha or beta versions of components to correct work.</p>]]>
+	</description>
+	<files>
+		<filename plugin="xdownloader">xdownloader.php</filename>
+		<filename>index.html</filename>
+		<filename>license.txt</filename>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">en-GB.plg_xdownloader.ini</language>
+		<language tag="en-GB">en-GB.plg_xdownloader.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<field name="date_from" id="date_from" type="calendar" default="" label="Select From Date" description="" format="%Y-%m-%d"  size="40" />	
+	<field name="date_to" id="date_to" type="calendar" default="" label="Select To Date" description="" format="%Y-%m-%d"  size="40" />
+	<field name="order_status" type="list"
+			label="" description=""
+			default="0" class="inputbox"
+		 >
+			<option value="A">All</option>
+			<option value="C">Confirmed</option>
+			<option value="U">Confirmed by shopper</option>			
+			<option value="X">Cancelled</option>
+			<option value="R">Refunded</option>
+			<option value="P">Pending</option>
+			<option value="S">Shipped</option>
+			
+		</field>
+	<field name="id" id="id" type="text" default="" label="" description="" size="80"/>
+	<field name="email" id="email" type="text" default="" label="" description="" size="40"/>
+	<field name="item_sku" id="item_sku" type="text" default="" label="" description="" size="40"/>
+</form>

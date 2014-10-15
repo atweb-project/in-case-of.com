@@ -1,0 +1,48 @@
+.ontab {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	background-color: #ffae00;
+	border-left: outset 2px #ff9900;
+	border-right: outset 2px #808080;
+	border-top: outset 2px #ff9900;
+	border-bottom: solid 1px #d5d5d5;
+	width: 14%;
+	text-align: center;
+	cursor: hand;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.offtab {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	background-color : #e5e5e5;
+	border-left: outset 2px #E0E0E0;
+	border-right: outset 2px #E0E0E0;
+	border-top: outset 2px #E0E0E0;
+	border-bottom: solid 1px #d5d5d5;
+	width: 14%;
+	text-align: center;
+	cursor: hand;
+	font-weight: normal;
+}
+.tabheading {
+	background-color: #ffae00;
+	color: #FFFFFF;
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	text-align: left;
+}
+.pagetext {
+	visibility: hidden;
+	display: none;
+	position: relative;
+	top: 0;
+}
+.number{
+	font: 8pt Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-align: center;
+	text-decoration: underline;
+}
+.remositorymodule img {
+	border: 0;
+}

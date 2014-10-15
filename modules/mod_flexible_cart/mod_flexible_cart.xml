@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<extension type="module" version="2.5">
+    <name>Flexible - VirtueMart Shopping Cart</name>
+    <creationDate>May 2013</creationDate>
+    <author>flexiblewebdesign.com</author>
+    <copyright>Copyright (C) 2013. All rights reserved.</copyright>
+    <license>GNU/GPL 3 Licence</license>
+    <version>2.0</version>
+    <description>Virtuemart 2 Dropdown Shopping Cart. Developed by LineLab, modified and enriched by Flexible Web Design</description>
+    <files>
+        <filename module="mod_flexible_cart">mod_flexible_cart.php</filename>
+		<filename module="mod_flexible_cart">index.html</filename>
+        <filename module="mod_flexible_cart">tmpl/default.php</filename>
+		<filename module="mod_flexible_cart">tmpl/index.html</filename>
+		<filename module="mod_flexible_cart">fields/color.php</filename>
+		<filename module="mod_flexible_cart">fields/index.html</filename>
+		<folder module="mod_flexible_cart">media</folder>
+    </files>
+     
+    <config>
+    	<fields name="params" addfieldpath="/modules/mod_flexible_cart/fields">
+    		<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text" default="" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="space1" type="spacer" label="&lt;br&gt;&lt;b&gt;------------- Dropdown Box Style ----------------&lt;/b&gt;"  />
+				
+				<field name="theme" type="list" default="theme1" label="Theme" description="Choose a theme that fits your website layout the best.">
+		    		<option value="theme1">Theme-1</option>
+		    		<option value="theme2">Theme-2</option>
+					<option value="theme3">Theme-3</option>
+				</field>
+				
+    			<field name="orientation" type="list" default="left" label="Dropdown Box Orientation" description="Choose the orientation based on which (left-right) side you are using the shopping cart in your website. If you choose LEFT, then the dropdowned box will be floated to left side, RIGHT is the other way around. For better understand, try the parameters and see the result in action in the front-end.">
+		    		<option value="left">Left</option>
+		    		<option value="right">Right</option>
+				</field>
+				<field name="dropdownwidth" type="text" default="400" label="Dropdown Box Width" description="Do not put 'px' (pixel) at the end. Just enter the value." />
+				<field name="dropdowcount" type="text" default="3" label="Product in a row" description="In the dropdown box, items are listed side-by side. Define how many product you would like to list in a row. The product thumbnail will be resized automatically based on dropdown width and the product in a row number" />
+				
+				<field name="space2" type="spacer" label="&lt;br&gt;&lt;b&gt;------------- Dropdown Box Colors ----------------&lt;/b&gt;&lt;br/&gt;&lt;em&gt;(In case you want to change the colors)&lt;em/&gt;&lt;br/&gt;&lt;br/&gt;"  />
+				
+    			<field name="dropback" default=" " type="color" label="Background" cellwidth="6" cellheight="8" />
+				<field name="droptext" default=" " type="color" label="Text" cellwidth="6" cellheight="8" />
+				<field name="droplink" default=" " type="color" label="Link" cellwidth="6" cellheight="8" />
+				<field name="droplinkhover" default=" " type="color" label="Link:hover" cellwidth="6" cellheight="8" />
+				<field name="dropbutton"  default=" " type="color" label="'Checkout' button" cellwidth="6" cellheight="8" />
+				<field name="dropbuttonhover"  default=" " type="color" label="'Checkout' button:hover" cellwidth="6" cellheight="8" />
+				<field name="dropbuttontext" default=" " type="color" label="'Checkout' button text" cellwidth="6" cellheight="8" />
+				<field name="dropborder" default=" " type="color" label="Border Color" cellwidth="6" cellheight="8" />
+				
+				 
+				
+				
+				<field name="space3" type="spacer" label="&lt;br&gt;&lt;b&gt;------------- Module Colors ----------------&lt;/b&gt;&lt;br/&gt;&lt;em&gt;(In case you want to change the colors)&lt;em/&gt;&lt;br/&gt;&lt;br/&gt;"  />
+				
+				<field name="modulecolor" default=" " type="color" label="Module Background" cellwidth="6" cellheight="8" />
+				<field name="modulecolorhover" default=" " type="color" label="Module Background:hover" cellwidth="6" cellheight="8" />
+				<field name="moduletext" default=" " type="color" label="Module Text" cellwidth="6" cellheight="8" />
+					
+				
+			</fieldset>
+    	</fields>
+    </config>
+</extension>

@@ -1,0 +1,540 @@
+/* This is the Remository specific CSS 
+
+#remository, #remositoryfileinfo {
+width: 100%;
+}
+
+hr {
+	height: 1px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 1px dotted #bbbbbb;
+}
+*/
+
+#remositoryAddFile #remositoryuploadinfo dl, #remositoryuploadinfo dd, #remositoryuploadinfo dt {
+	margin-left: 0;
+}
+
+#remositoryAddFile dl, #remository p {
+	margin: 0 0 6px 0;
+	padding: 0;
+}
+
+/*---------------------------------|
+| Specific front office management |
+|---------------------------------*/
+#remositoryAddFile {
+	float: right;
+}
+
+#remositoryAddFile #remositoryuplocal, #remositoryAddFile #remositoryupremote, #remositoryAddFile #remositoryuploadinfo {
+	background-color: #ffffff;
+	padding: 0;
+}	
+#remositoryAddFile {
+	color: #1c1c1c;
+	font-family: arial;
+	font-size: 14px;
+	width: 100%;
+}
+#remositoryAddFile #remositoryupremote {
+	clear: both;
+}
+#remositoryAddFile .clear {
+	clear: both;
+}
+#remositoryAddFile h2 {
+	border-bottom:3px solid #D9D9D9;
+	font-size:22px;
+	line-height:27px;
+	margin: 14px 0;
+	padding: 0;
+}
+#remositoryAddFile a {
+	color: #0264c7;
+}
+#remositoryAddFile input, #remositoryAddFile select {
+	padding: 3px;
+	font-size: 14px;
+	clear: both;
+	float: left;
+}
+#remositoryAddFile textarea {
+	float: left;
+	clear: both;
+	}
+#remositoryAddFile label em {
+	font-weight: normal;
+}
+#remositoryAddFile .remositoryfilesummary dt, #remositoryAddFile #remositoryfileinfo dt, #remositoryAddFile #remositoryupload label,
+#remositoryAddFile #remositoryupload dt, #remositoryAddFile #remositorymanycommon dt, #remositoryAddFile #remositorymanycommon label,
+#remositoryAddFile #remositorythumbupdate dt, #remositoryAddFile #remositorythumbupdate label, #remositoryAddFile dt {
+	font-size: 13px;
+	font-weight: bold;
+	display: block;
+	padding: 6px 0px 2px 0;
+	clear: both;
+	border: none;
+	float: left;
+	text-align: left;
+	width: 275px;
+}
+#remositoryAddFile .button2-left {
+	margin: 5px 0 10px -2px;
+}
+#remositoryAddFile .button2-left a {
+	width: 97px;
+	height: 29px;
+	line-height: 29px;
+	padding: 0;
+	text-align: center;
+	color: #1c1c1c;
+	font-size: 13px;
+}
+#remositoryAddFile .button2-left a:hover {
+	text-decoration: underline;
+}
+#remositoryAddFile input.button {
+/*
+background-image: url(http://j15.testremository.com/images/remository/button-2.png);
+width: 78px;
+height: 19px;
+*/
+	line-height: 37px;
+	text-align: center;
+	padding: 9px 2px 9px 0;
+	margin: 10px 0 20px 0;
+	font-size: 15px;
+	display: block;
+	float: left;
+	clear: none;
+}
+#remositoryAddFile .button:hover {
+	text-decoration: underline;
+}
+#remositoryAddFile .button.first {
+	margin: 10px 5px 0 0px;
+}
+#remositoryAddFile .button2-left {
+	background-image: url(/components/com_remository/images/button-1-left.png);
+	position: relative;
+	top: 5px;
+}
+* html #remositoryAddFile .button2-left {
+	background-image: url(/components/com_remository/images/button-1-left.gif);
+}
+#remositoryAddFile .button2-left .blank {
+	background-image: url(/components/com_remository/images/button-1-right.png);
+	margin-right: -11px;
+}
+* html #remositoryAddFile .button2-left .blank {
+	margin-right: 0;
+	background-image: url(/components/com_remository/images/button-1-right.gif);
+}
+#remositoryAddFile .icons {
+	margin-left: 0px;
+	clear: both;
+}
+#remositoryAddFile .icons a {
+	width: 32px;
+	padding: 3px;
+	margin: 0;
+}
+#remositoryAddFile p.instructions {
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+#remositoryAddFile a.right {
+	float: right;
+	font-size: 15px;
+	line-height: 28px;
+}
+#remositoryAddFile #remositoryeditor {
+	float: left;
+	margin-left: 0;
+}
+#remositoryAddFile .mceToolbar.mceLeft.mceFirst.mceLast {
+	background-color: transparent;
+	background-image: url(/components/com_remository/images/wysiwyg-bg.png);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	width: 500px;
+}
+* html #remositoryAddFile .mceToolbar.mceLeft.mceFirst.mceLast {
+	background-image: none;
+	background-color: #e4e4e4;
+}
+#remositoryAddFile .defaultSkin table {
+	background-color: transparent;
+}
+#remositoryAddFile .moduletable {
+	clear: both;
+}
+#remositoryAddFile .defaultSkin table.mceLayout tr.mceFirst td, #remository .defaultSkin table.mceLayout tr.mceLast td {
+	border: none;
+}
+
+/* Added by Gebus */
+span.remositoryFolder {
+    float: left;
+    margin-top: -14px;
+    margin-right: 5px;
+}
+
+span.remositoryUpdateFolder {
+    float: left;
+    margin-top: -8px;
+}
+span.remositoryDeleteFolder {
+    float: left;
+    margin-top: -8px;
+}
+
+span.remositoryUpdateCurrentFolder {
+    float: left;
+    margin-top: -8px;
+}
+span.remositoryDeleteCurrentFolder {
+    float: left;
+    margin-top: -8px;
+    margin-right: 5px;
+}
+
+div.remositoryCreateFolder {
+    padding: 30px 0;
+    border-top: 1px dotted #999;
+}
+
+div.remositoryCreateFolder img {
+    float: left;
+    margin: -14px 5px 0 0;
+}
+
+
+
+/**** MISCELLANEOUS ****/
+
+#remositorylistsearch {
+	float: right;
+	margin-top: 20px;
+}
+#remositorylistsearch input {
+	background: #FFF url(images/icon-search.gif) scroll center center no-repeat;
+	padding-left: 24px;
+}
+
+#remositorypageheading {
+	clear: right;
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-top: 10px;
+	width: 100%;
+}
+#remository #remositorypageheading h2, #remository #remositorypageheading h3 {
+	text-align: left;
+	line-height: normal;
+}
+.remositorydownstatus {
+	padding: 2px;
+}
+
+.remositoryNarrow {
+	padding: 8px 0;
+}
+
+#remositorycredits {
+	width: 98%;
+	text-align: left;
+	padding: 10px 10px 20px 0;
+}
+#remositorypreamble {
+	padding: 5px;
+}
+#remositorycredits {
+	text-align: center;
+	clear: both;
+}
+#remositorypathway img, #remositorycontainer img, #remositoryfilelisting div img,
+#left img, #right img, #remositorycontainerlist img, #remositorypageheading h2 img,
+#remositorypageheading h3 img, #remository h4 img {
+	border: 0;
+	padding: 2px;
+}
+#remositoryfooter {
+	width: 98%;
+	padding: 10px 10px 0 0;
+	margin-top: 10px;
+	border-bottom: 1px solid #999;
+	clear: both;
+}
+#remositoryfooter #left {
+	width: 60%;
+	float: left;
+	padding: 10px;
+	margin: 5px 0 0;
+}
+#remositoryfooter #right {
+	float: left;
+	padding: 10px;
+	margin: 5px 0 0;
+}
+#remositorycontainerlist table {
+	width: 98%;
+	border: 0;
+}
+#remositorycontainerlist th {
+	text-align: left;
+	border: none;
+}
+#remositorycontainerlist td {
+	border: none;
+}
+#remository #remositorycontainerlist h3 {
+	border-top: 1px dotted #999;
+	margin: 0px;
+	padding-top: 14px;
+}
+#remositorycontainerhead {
+	width: 80%;
+}
+#remositoryorderby {
+	line-height: 30px;
+}
+.remositoryfileblock {
+	border-top: 1px solid #999;
+}
+#remository #remositoryfilelisting h3 {
+	background-repeat: no-repeat;
+	margin: 5px 0 5px 0;
+	line-height: 100%;
+}
+#remository h3.remositoryfileleft {
+	float: left;
+	width: 60%;
+}
+#remository h3.remositoryfileright {
+	float: right;
+	background-image: url('/components/com_remository/images/download_trans.gif');
+	background-repeat: no-repeat;
+	background-position: top right;
+	text-align: right;
+	max-width: 30%;
+}
+#remository #remositoryfilelisting h3 a, #remository #remositoryfilelisting h3 a:link {
+	text-decoration: none;
+}
+#remositoryfileinfo img {
+	padding: 10px 0 0 5px;
+	margin-top: -6px;
+	border: 0;
+	float: left;
+}
+#remositoryinfodown {
+	padding: 12px 10px 0 5px;
+	font-size: 90%;
+	float: left;
+}
+.remositorylistdown {
+	padding: 10px 0 0;
+	margin: 10px 0 -10px 0;
+	border: 0;
+	height: 25px;
+	line-height: 25px;
+	vertical-align: middle;
+}
+#remositoryplaintext {
+	clear: left;
+	width: 99%;
+}
+#remositorythumbbox {
+	clear: left;
+	width: 95%;
+	border-top: 1px dotted #999;
+}
+#remositoryrelateddocs table, #remositoryrelateddocs td {
+	border: none;
+}
+#remositoryrelateddocs {
+	clear: both;
+	padding: 10px 25px 0 25px;
+}
+.remos
+.remositorythumbset a {
+	padding: 3px;
+}
+.remositorythumbset {
+	float: left;
+	width: 65%;
+}
+.remositorycommand {
+	padding: 5px;
+	border: 1px solid red;
+	margin: 3px;
+}
+#remositorycmdbox {
+	width: 32%;
+	clear: left;
+	float: left;
+	text-align: right;
+	font-weight: bold;
+}
+#remositoryfileinfo h2 img {
+
+}
+#remositoryfileinfo h2 {
+	border-bottom: 1px solid #bbbbbb;
+	padding: 10px 0 20px 2px!important;
+}
+#remositoryfileinfo h2 a, #remositoryfileinfo h2 a:link {
+	text-decoration: none;
+}
+.remositoryonethumb {
+	float: right;
+	padding: 5px;
+}
+.remositorythumbnail {
+	float: left;
+	padding: 0 5px;
+}
+
+/* IE hack to get round ignoring right margin */
+* html .remositoryfilesummary
+{
+	width: 100%;
+}
+.remositoryfilesummary {
+	clear:both;
+	background-repeat: no-repeat;
+	background-position:top right;
+}
+.remositorypagenav {
+	clear: both;
+	width: 100%;
+	text-align: right;
+	padding-top: 10px;
+}
+.remositoryfilesummary dt, #remositoryfileinfo dt, #remositoryupload label,
+#remositoryupload dt, #remositorymanycommon dt, #remositorymanycommon label,
+#remositorythumbupdate dt, #remositorythumbupdate label {
+	width: 140px;
+	float: left;
+	clear: left;
+	margin: 0;
+	padding: 0 0.3em 0.4em 0.2em;
+/*	border-top: 1px dotted #DDDDDD; */
+	text-align: right;
+}
+
+/* commented backslash hack for mac-ie5 \*/
+dt { clear: both; }
+/* end hack */
+
+.remositoryfilesummary dd, #remositoryfileinfo dd, #remositorythumbupdate dd
+{
+	float: left;
+	margin: 0;
+	width: 65%;
+	padding: 0 0.2em 0.4em 0.2em;
+	border-top: 1px solid #BBB;
+}
+.remositorydelthumb {
+	float: left;
+	padding: 5px;
+	margin: 0;
+	text-align: center;
+}
+/* This defines the light background colour used by Remository */
+.remositoryfilesummary dd, #remositoryuplocal, #remositoryuploadinfo,
+#remositorymanycommon, #remositorycontainerlist th, .remositorylight {
+	background-color: #EEE;
+}
+
+/* This defines the dark background colour used by Remository */
+.remositorydark, #remositoryupremote {
+	background-color: #eeeeee;
+}
+#remositoryuplocal, #remositoryuploadinfo, #remositorymanycommon {
+	padding: 8px;
+	margin: 0;
+}
+#remositoryupremote {
+	padding: 8px;
+	margin: 0;
+}
+#remositoryiconlist div, #remositoryiconlist p, .remositorymax {
+	margin-left: 30%;
+	padding: 2px;
+}
+#remositoryiconlist img {
+border: 0;
+}
+
+/* IE hack to control icons */
+* html #remositoryiconlist div
+{
+	width:70%;
+}
+#remositoryeditor {
+	clear: left;
+	margin-left: 10px;
+}
+.remositorymessage {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.remositorycomment {
+	font-style:italic;
+        margin-top: 12px;
+}
+
+.remositorywarning {
+        font-weight: bold;
+        color: #cc0000;
+}
+/* End of the Remository specific CSS */
+
+
+
+
+/*--------------------------------------------------|
+| dTree 2.05 | www.destroydrop.com/javascript/tree/ |
+|---------------------------------------------------|
+| Copyright (c) 2002-2003 Geir Landr� |
+|--------------------------------------------------*/
+
+.dtree {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666;
+	white-space: nowrap;
+	line-height: 100%;
+}
+.dtree img {
+	border: 0px;
+	vertical-align: middle;
+}
+.dtree a {
+	color: #333;
+	text-decoration: none;
+}
+.dtree a.node, .dtree a.nodeSel {
+	white-space: nowrap;
+	padding: 1px 2px 1px 2px;
+}
+.dtree a.node:hover, .dtree a.nodeSel:hover {
+	color: #333;
+	text-decoration: underline;
+}
+.dtree a.nodeSel {
+	background-color: #c0d2ec;
+}
+.dtree .clip {
+	overflow: hidden;
+}
+
+
+
+

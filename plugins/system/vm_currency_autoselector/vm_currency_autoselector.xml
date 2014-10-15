@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6.0" type="plugin" group="system" method="upgrade">
+   <name>VM Currency AutoSelector</name>
+   <version>1.2.0</version>
+   <creationDate>April 2013</creationDate>
+   <author>Alex Lavrik</author>
+   <authorEmail>lavrik_av@yahoo.com</authorEmail>
+   <authorUrl>www.mysite4u.net</authorUrl>
+   <copyright>Copyright © 2013 - All rights reserved.</copyright>
+   <license>GNU General Public License v2.0</license>
+   <description><![CDATA[]]></description>
+	<files>
+		<filename plugin="vm_currency_autoselector">vm_currency_autoselector.php</filename>
+	</files>
+  <languages folder="language">
+    <!-- Any language files included with the module -->
+        <language tag="en-GB">en-GB/en-GB.plg_system_vm_currency_autoselector.ini</language>
+    </languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+		        <field name="@spacer1" type="spacer" default="" label="RULE 1"	description="" />
+		        <field name="currency1" type="text" size="5" default="USD" label="Currency"	description="Currency(e.g. EUR, USD, GBP ). See http://www.xe.com/iso4217.php" />
+				<field name="country1" type="textarea" default="" label="Country" description="Country code(e.g. DE;FR;US), one country per a row separated by semicolon. See http://countrycode.org/ for countries codes for countries codes" rows="10" cols="5" />				
+		        <field name="@spacer2" type="spacer" default="" label="RULE 2"	description="" />
+		        <field name="currency2" type="text" size="5" default="CHF" label="Currency"	description="Currency(e.g. EUR, USD, GBP ). See http://www.xe.com/iso4217.php" />
+				<field name="country2" type="textarea" default="" label="Country" description="Country code(e.g. DE;FR;US), one country per a row separated by semicolon. See http://countrycode.org/ for countries codes" rows="10" cols="5" />				
+		        <field name="@spacer3" type="spacer" default="" label="RULE 3"	description="" />
+		        <field name="currency3" type="text" size="5" default="GBP" label="Currency"	description="Currency(e.g. EUR, USD, GBP ). See http://www.xe.com/iso4217.php" />
+				<field name="country3" type="textarea" default="" label="Country" description="Country code(e.g. DE;FR;US), one country per a row separated by semicolon. See http://countrycode.org/ for countries codes" rows="10" cols="5" />				
+		        <field name="@spacer4" type="spacer" default="" label="RULE 4"	description="" />
+		        <field name="currency4" type="text" size="5" default="USD" label="Currency"	description="Currency(e.g. EUR, USD, GBP ). See http://www.xe.com/iso4217.php" />
+				<field name="country4" type="textarea" default="" label="Country" description="Country code(e.g. DE;FR;US), one country per a row separated by semicolon. See http://countrycode.org/ for countries codes" rows="10" cols="5" />				
+		        <field name="@spacer5" type="spacer" default="" label="RULE 5"	description="" />
+		        <field name="currency5" type="text" size="5" default="RUR" label="Currency"	description="Currency(e.g. EUR, USD, GBP ). See http://www.xe.com/iso4217.php" />
+				<field name="country5" type="textarea" default="" label="Country" description="Country code(e.g. DE;FR;US), one country per a row separated by semicolon. See http://countrycode.org/ for countries codes" rows="10" cols="5" />				
+				
+		        <field name="@spacer100" type="spacer" default="" label="DEBUGGING OPTIONS"	description="" />
+				
+	            <field name="visitorip" type="list" default="0" label="Show Visitor IP" description="Show visitor IP">
+	              <option value="0">No</option>
+	              <option value="1">Yes</option>
+	            </field>
+	            <field name="test" type="list" default="0" label="Test mode" description="Allows to emulate visitor's country">
+	              <option value="0">No</option>
+	              <option value="1">Yes</option>
+	            </field>
+	            <field name="ctrip" type="list" default="0" label="Use country/Use IP" description="Use country/Use IP">
+	              <option value="0">Country</option>
+	              <option value="1">IP</option>
+	            </field>
+	            <field name="ctrlist" type="list" default="UK" label="Country" description="Select country">
+	              <option value="BR">Brazil</option>
+	              <option value="DE">Germany</option>
+	              <option value="CN">China</option>
+	              <option value="IN">India</option>
+	              <option value="JP">Japan</option>
+	              <option value="ZA">SAR</option>
+	              <option value="CH">Swiss</option>
+	              <option value="RU">Russia</option>
+	              <option value="GB">UK</option>
+	              <option value="US">US</option>
+	            </field>
+		        <field name="ip" type="text" default="212.58.253.67" size="13" label="IP"	description="Type desired IP in a proper format: 212.58.253.67, this one is www.bbc.co.uk" />
+			</fieldset>
+		</fields>
+	</config>
+  
+</extension>

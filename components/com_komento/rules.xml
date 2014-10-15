@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rules component="default">
+	<section name="comment">
+		<rule name="read_comment" title="COM_KOMENTO_ACL_READCOMMENT" />
+		<rule name="read_stickies" title="COM_KOMENTO_ACL_READSTICKIES" />
+		<rule name="read_lovies" title="COM_KOMENTO_ACL_READLOVIES" />
+		<rule name="add_comment" title="COM_KOMENTO_ACL_ADDCOMMENT" />
+		<rule name="edit_own_comment" title="COM_KOMENTO_ACL_EDITOWNCOMMENT" />
+		<rule name="delete_own_comment" title="COM_KOMENTO_ACL_DELOWNCOMMENT" />
+		<rule name="author_edit_comment" title="COM_KOMENTO_ACL_AUTHOREDITCOMMENT" />
+		<rule name="author_delete_comment" title="COM_KOMENTO_ACL_AUTHORDELCOMMENT" />
+		<rule name="author_publish_comment" title="COM_KOMENTO_ACL_AUTHORPUBCOMMENT" />
+		<rule name="author_unpublish_comment" title="COM_KOMENTO_ACL_AUTHORUNPUBCOMMENT" />
+		<rule name="edit_all_comment" title="COM_KOMENTO_ACL_EDITALLCOMMENT" />
+		<rule name="delete_all_comment" title="COM_KOMENTO_ACL_DELALLCOMMENT" />
+		<rule name="publish_all_comment" title="COM_KOMENTO_ACL_PUBALLCOMMENT" />
+		<rule name="unpublish_all_comment" title="COM_KOMENTO_ACL_UNPUBALLCOMMENT" />
+		<!-- <rule name="comments_manager" title="COM_KOMENTO_ACL_COMMENTMANAGER" />
+		<rule name="flags_manager" title="COM_KOMENTO_ACL_REPORTSMANAGER" />
+		<rule name="pending_manager" title="COM_KOMENTO_ACL_PENDINGMANAGER" /> -->
+	</section>
+
+	<section name="features">
+		<rule name="like_comment" title="COM_KOMENTO_ACL_LIKECOMMENT" />
+		<rule name="report_comment" title="COM_KOMENTO_ACL_REPORTCOMMENT" />
+		<rule name="share_comment" title="COM_KOMENTO_ACL_SHARECOMMENT" />
+		<rule name="reply_comment" title="COM_KOMENTO_ACL_REPLYCOMMENT" />
+		<rule name="stick_comment" title="COM_KOMENTO_ACL_STICKCOMMENT" />
+		<rule name="upload_attachment" title="COM_KOMENTO_ACL_UPLOADATTACHMENT" />
+		<rule name="download_attachment" title="COM_KOMENTO_ACL_DOWNLOADATTACHMENT" />
+		<rule name="delete_attachment" title="COM_KOMENTO_ACL_DELETEATTACHMENT" />
+	</section>
+</rules>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site">
+	<name>My Pricing</name>
+	<author>Valentín García</author>
+	<creationDate>March 2013</creationDate>
+	<copyright>Copyright (C) 2012 Valentín García.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>htmgarcia@gmail.com</authorEmail>
+	<authorUrl>www.valentingarcia.com.mx</authorUrl>
+	<version>1.0.0</version>
+	<description><![CDATA[
+		<style type='text/css'>
+		.panelform .adminformlist li label
+			{text-align:right !important; font-family:Calibri; font-size:12px;}
+		
+		#jform_params_block1-lbl, #jform_params_block2-lbl, #jform_params_block3-lbl, #jform_params_block4-lbl, #jform_params_block5-lbl
+			{font-weight:bold;text-align:left !important;color:#fff;background:#333;border-radius:4px;padding:5px 15px;width:100% !important;font-family: Calibri;}
+		</style>
+		<!--img style="float:left;margin-right:20px;margin-top:10px;width:100px;height:auto;" src="../modules/mod_lastworks/icon.png"-->
+		<h2>My Pricing</h2>
+		<p><b>My Pricing</b> show your pricing tables in an easy way.<br /><br />
+		Info and support: <a href="http://www.valentingarcia.com.mx" target="_blank"><span style="opacity:0.5;">www.</span><span style="font-weight:bold;">valentin</span><span style="font-weight:normal;">garcia</span><span style="opacity:0.5;">.com.mx</span></a>
+		</p>
+		]]>
+	</description>
+	<files>
+		<filename module="mod_mypricing">mod_mypricing.php</filename>
+		<filename module="mod_mypricing">index.html</filename>
+		<filename module="mod_mypricing">LICENSE.txt</filename>
+		<folder module="mod_mypricing">tmpl</folder>
+		<folder module="mod_mypricing">js</folder>
+		<folder module="mod_mypricing">css</folder>
+		<folder module="mod_mypricing">images</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_mypricing.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="BASIC">
+				<field name="block1" type="spacer" label="PLAN 1" />
+				<field name="vgplan1_status" type="list" default="1" label="Enable" description="Set YES to show this Plan">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="vgplan1_name" type="text" default="" label="Name" description="Name of this plan. Leave in blank to disable." />
+				<field name="vgplan1_price" type="text" default="" label="Price" description="Price for this plan. EXAMPLE: 39.00 OR: 39. Leave in blank to disable." />
+				<field name="vgplan1_content" type="textarea" default="" label="Content ( separate with :: )" description="Set the content for this plan using :: to add break lines. EXAMPLE: Free setup::Domain name::Access to database. Leave in blank to disable." cols="25" rows="5" />
+				<field name="vgplan1_txtlink" type="text" default="" label="Text for read more link" description="Text for a link. EXAMPLE: Read more. Leave in blank to disable." />
+				<field name="vgplan1_link" type="text" default="" label="URL for read more link" description="URL. EXAMPLE: http://mysite.com/readmore OR: /readmore.html. Leave in blank to disable." />
+				
+				<field name="block2" type="spacer" label="PLAN 2" />
+				<field name="vgplan2_status" type="list" default="1" label="Enable" description="Set YES to show this Plan">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="vgplan2_name" type="text" default="" label="Name" description="Name of this plan. Leave in blank to disable." />
+				<field name="vgplan2_price" type="text" default="" label="Price" description="Price for this plan. EXAMPLE: 39.00 OR: 39. Leave in blank to disable." />
+				<field name="vgplan2_content" type="textarea" default="" label="Content ( separate with :: )" description="Set the content for this plan using :: to add break lines. EXAMPLE: Free setup::Domain name::Access to database. Leave in blank to disable." cols="25" rows="5" />
+				<field name="vgplan2_txtlink" type="text" default="" label="Text for read more link" description="Text for a link. EXAMPLE: Read more. Leave in blank to disable." />
+				<field name="vgplan2_link" type="text" default="" label="URL for read more link" description="URL. EXAMPLE: http://mysite.com/readmore OR: /readmore.html. Leave in blank to disable." />
+				
+				<field name="block3" type="spacer" label="PLAN 3" />
+				<field name="vgplan3_status" type="list" default="1" label="Enable" description="Set YES to show this Plan">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="vgplan3_name" type="text" default="" label="Name" description="Name of this plan. Leave in blank to disable." />
+				<field name="vgplan3_price" type="text" default="" label="Price" description="Price for this plan. EXAMPLE: 39.00 OR: 39. Leave in blank to disable." />
+				<field name="vgplan3_content" type="textarea" default="" label="Content ( separate with :: )" description="Set the content for this plan using :: to add break lines. EXAMPLE: Free setup::Domain name::Access to database. Leave in blank to disable." cols="25" rows="5" />
+				<field name="vgplan3_txtlink" type="text" default="" label="Text for read more link" description="Text for a link. EXAMPLE: Read more. Leave in blank to disable." />
+				<field name="vgplan3_link" type="text" default="" label="URL for read more link" description="URL. EXAMPLE: http://mysite.com/readmore OR: /readmore.html. Leave in blank to disable." />
+				
+				<field name="block4" type="spacer" label="PLAN 4" />
+				<field name="vgplan4_status" type="list" default="1" label="Enable" description="Set YES to show this Plan">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="vgplan4_name" type="text" default="" label="Name" description="Name of this plan. Leave in blank to disable." />
+				<field name="vgplan4_price" type="text" default="" label="Price" description="Price for this plan. EXAMPLE: 39.00 OR: 39. Leave in blank to disable." />
+				<field name="vgplan4_content" type="textarea" default="" label="Content ( separate with :: )" description="Set the content for this plan using :: to add break lines. EXAMPLE: Free setup::Domain name::Access to database. Leave in blank to disable." cols="25" rows="5" />
+				<field name="vgplan4_txtlink" type="text" default="" label="Text for read more link" description="Text for a link. EXAMPLE: Read more. Leave in blank to disable." />
+				<field name="vgplan4_link" type="text" default="" label="URL for read more link" description="URL. EXAMPLE: http://mysite.com/readmore OR: /readmore.html. Leave in blank to disable." />
+				
+				<!--field name="block5" type="spacer" label="PLAN 5" />
+				<field name="vgplan5_status" type="list" default="1" label="Enable" description="Set YES to show this Plan">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="vgplan5_name" type="text" default="" label="Name" description="Name of this plan. Leave in blank to disable." />
+				<field name="vgplan5_price" type="text" default="" label="Price" description="Price for this plan. EXAMPLE: 39.00 OR: 39. Leave in blank to disable." />
+				<field name="vgplan5_content" type="textarea" default="" label="Content ( separate with :: )" description="Set the content for this plan using :: to add break lines. EXAMPLE: Free setup::Domain name::Access to database. Leave in blank to disable." cols="25" rows="5" />
+				<field name="vgplan5_txtlink" type="text" default="" label="Text for read more link" description="Text for a link. EXAMPLE: Read more. Leave in blank to disable." />
+				<field name="vgplan5_link" type="text" default="" label="URL for read more link" description="URL. EXAMPLE: http://mysite.com/readmore OR: /readmore.html. Leave in blank to disable." /-->
+				
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="vglayout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+	
+			</fieldset>
+		</fields>
+	</config>
+</extension>

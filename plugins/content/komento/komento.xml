@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install version="1.5.0" type="plugin" group="content" method="upgrade">
+	<name>Content - Komento</name>
+	<author>Stack Ideas</author>
+	<creationDate>01/01/2012</creationDate>
+	<copyright>Copyright (C) 2012 StackIdeas. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<authorUrl>http://www.stackideas.com</authorUrl>
+	<version>1.0</version>
+	<description>This plugin adds a discussion/comment interface at the bottom of the article</description>
+	<files>
+		<filename plugin="komento">komento.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<params>
+	</params>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			</fieldset>
+		</fields>
+	</config>
+
+</install>

@@ -1,0 +1,4 @@
+"Order ID","Product ID",SKU,"Product Name","Product Quantity","Product Final Price","Order Number","Order Total","Order Tax","Order Subtotal","Order Shipment","Order Discount","Order Status","Order Create Date",Title,"First Name","Last Name","Middle Name","Email Address","Phone 1","Phone 2",Fax,"Address 1","Address 2",City,State,Country,Zip
+67,3,Z01,"Zombie Kit",1,181.50000,435609,181.50000,31.50000,150.00000,0.00,0.00000,"Confirmed by shopper","2014-01-01 16:45:22",Mr,jim,papadopoulos,,losty18@yahoo.com,,,,srfsgfe,,Athens,ΑΤΤΙΚΗΣ,Greece,12201
+68,18,V01,"Vampire Kit",1,181.50000,e222010,181.50000,31.50000,150.00000,0.00,0.00000,Confirmed,"2014-01-01 16:54:07",Mr,jim,papadopoulos,,losty18@yahoo.com,,,,srfsgfe,,Athens,ΑΤΤΙΚΗΣ,Greece,12201
+69,19,W01,"Werewolf Kit",1,181.50000,766a011,181.50000,31.50000,150.00000,0.00,0.00000,Confirmed,"2014-01-01 17:09:25",Mr,jim,papadopoulos,,losty18@yahoo.com,,,,srfsgfe,,Athens,ΑΤΤΙΚΗΣ,Greece,12201

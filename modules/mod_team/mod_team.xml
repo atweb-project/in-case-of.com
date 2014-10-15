@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site">
+	<name>Team</name>
+	<author>Valentín García</author>
+	<creationDate>March 2013</creationDate>
+	<copyright>Copyright (C) 2012 Valentín García.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>htmgarcia@gmail.com</authorEmail>
+	<authorUrl>http://www.valentingarcia.com.mx</authorUrl>
+	<version>1.0.3</version>
+	<description><![CDATA[
+		<style type='text/css'>
+		.panelform{ background-image:url(../templates/vg_laboratory/img/idea6.png); background-repeat:no-repeat; background-position:right top; }
+		.panelform .adminformlist li label
+			{text-align:right !important; font-family:Calibri; font-size:12px;}
+		
+		#jform_params_block1-lbl
+			{font-weight:bold;text-align:left !important;color:#fff;background:#333;border-radius:4px;padding:5px 15px;width:100% !important;font-family: Calibri;}
+		#jform_params_block2-lbl,#jform_params_block3-lbl,#jform_params_block4-lbl,#jform_params_block5-lbl,#jform_params_block6-lbl,#jform_params_block7-lbl,#jform_params_block8-lbl,#jform_params_block9-lbl
+			{font-weight:bold;text-align:left !important;color:#333;background:#ccc;border-radius:4px;padding:5px 15px;width:100% !important;font-family: Calibri;}
+		</style>
+		<h2>Team</h2>
+		<p>Designed for Simple Key<br /><br />
+		Info and support: <a href="http://www.valentingarcia.com.mx" target="_blank"><span style="opacity:0.5;">www.</span><span style="font-weight:bold;">valentin</span><span style="font-weight:normal;">garcia</span><span style="opacity:0.5;">.com.mx</span></a>
+		</p>
+		]]>
+	</description>
+	<files>
+		<filename module="mod_team">mod_team.php</filename>
+		<filename module="mod_team">index.html</filename>
+		<filename module="mod_team">LICENSE.txt</filename>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="BASIC">
+				<field name="block2" type="spacer" label="Person 1" />
+				<field name="name1" type="text" default="" label="Name" description="Leave in blank to disable" />
+				<field name="job1" type="text" default="" label="Job" description="Leave in blank to disable" />
+				<field name="txt1" type="textarea" label="Text" filter="raw" description="Leave in blank to disable" default="" cols="20" rows="10" />
+				<field name="soc1" type="textarea" label="Social links (HTML allowed)" filter="raw" description="Leave in blank to disable" default="" cols="20" rows="10" />
+				<field name="img1" type="media" label="Image" description="Leave in blank to disable" />
+				
+				<field name="block3" type="spacer" label="Person 2" />
+				<field name="name2" type="text" default="" label="Name" description="Leave in blank to disable" />
+				<field name="job2" type="text" default="" label="Job" description="Leave in blank to disable" />
+				<field name="txt2" type="textarea" label="Text" filter="raw" description="Leave in blank to disable" default="" cols="20" rows="10" />
+				<field name="soc2" type="textarea" label="Social links (HTML allowed)" filter="raw" description="Leave in blank to disable" default="" cols="20" rows="10" />
+				<field name="img2" type="media" label="Image" description="Leave in blank to disable" />
+				
+				<field name="block4" type="spacer" label="Person 3" />
+				<field name="name3" type="text" default="" label="Name" description="Leave in blank to disable" />
+				<field name="job3" type="text" default="" label="Job" description="Leave in blank to disable" />
+				<field name="txt3" type="textarea" label="Text" filter="raw" description="Leave in blank to disable" default="" cols="20" rows="10" />
+				<field name="soc3" type="textarea" label="Social links (HTML allowed)" filter="raw" description="Leave in blank to disable" default="" cols="20" rows="10" />
+				<field name="img3" type="media" label="Image" description="Leave in blank to disable" />
+				
+				<field name="block5" type="spacer" label="Person 4" />
+				<field name="name4" type="text" default="" label="Name" description="Leave in blank to disable" />
+				<field name="job4" type="text" default="" label="Job" description="Leave in blank to disable" />
+				<field name="txt4" type="textarea" label="Text" filter="raw" description="Leave in blank to disable" default="" cols="20" rows="10" />
+				<field name="soc4" type="textarea" label="Social links (HTML allowed)" filter="raw" description="Leave in blank to disable" default="" cols="20" rows="10" />
+				<field name="img4" type="media" label="Image" description="Leave in blank to disable" />
+				
+				<field name="block6" type="spacer" label="Person 5" />
+				<field name="name5" type="text" default="" label="Name" description="Leave in blank to disable" />
+				<field name="job5" type="text" default="" label="Job" description="Leave in blank to disable" />
+				<field name="txt5" type="textarea" label="Text" filter="raw" description="Leave in blank to disable" default="" cols="20" rows="10" />
+				<field name="soc5" type="textarea" label="Social links (HTML allowed)" filter="raw" description="Leave in blank to disable" default="" cols="20" rows="10" />
+				<field name="img5" type="media" label="Image" description="Leave in blank to disable" />
+				
+				<field name="block7" type="spacer" label="Person 6" />
+				<field name="name6" type="text" default="" label="Name" description="Leave in blank to disable" />
+				<field name="job6" type="text" default="" label="Job" description="Leave in blank to disable" />
+				<field name="txt6" type="textarea" label="Text" filter="raw" description="Leave in blank to disable" default="" cols="20" rows="10" />
+				<field name="soc6" type="textarea" label="Social links (HTML allowed)" filter="raw" description="Leave in blank to disable" default="" cols="20" rows="10" />
+				<field name="img6" type="media" label="Image" description="Leave in blank to disable" />
+				
+				<field name="block8" type="spacer" label="Person 7" />
+				<field name="name7" type="text" default="" label="Name" description="Leave in blank to disable" />
+				<field name="job7" type="text" default="" label="Job" description="Leave in blank to disable" />
+				<field name="txt7" type="textarea" label="Text" filter="raw" description="Leave in blank to disable" default="" cols="20" rows="10" />
+				<field name="soc7" type="textarea" label="Social links (HTML allowed)" filter="raw" description="Leave in blank to disable" default="" cols="20" rows="10" />
+				<field name="img7" type="media" label="Image" description="Leave in blank to disable" />
+				
+				<field name="block9" type="spacer" label="Person 8" />
+				<field name="name8" type="text" default="" label="Name" description="Leave in blank to disable" />
+				<field name="job8" type="text" default="" label="Job" description="Leave in blank to disable" />
+				<field name="txt8" type="textarea" label="Text" filter="raw" description="Leave in blank to disable" default="" cols="20" rows="10" />
+				<field name="soc8" type="textarea" label="Social links (HTML allowed)" filter="raw" description="Leave in blank to disable" default="" cols="20" rows="10" />
+				<field name="img8" type="media" label="Image" description="Leave in blank to disable" />
+				
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

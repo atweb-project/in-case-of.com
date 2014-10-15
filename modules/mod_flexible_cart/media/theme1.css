@@ -1,0 +1,164 @@
+﻿ /* 
+/*------------------------------------------------------------------------
+ # Flexible Dropdown Shopping Cart   - Version 2.0
+ # ------------------------------------------------------------------------
+ # Copyright (C) 2013 Flexible Web Design. All Rights Reserved.
+ # @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ # Author: Flexible Web Design Team
+ # Websites: http://www.flexiblewebdesign.com
+ -------------------------------------------------------------------------*/
+ 
+ 
+ #vmCartModule {
+	height: 30px;
+	text-transform: uppercase;
+	padding: 0 25px;
+	background: url(cart_icon.png) no-repeat left top;
+	position:relative;
+	display:inline-block;
+}
+
+#vmCartModule .total {
+	line-height: 30px;
+}
+.show_products {
+	display: block !important;
+	position: absolute;
+	z-index: 999;
+}
+#product_list {
+	position: absolute;
+	z-index: 999;
+	min-height: 20px;
+	padding: 10px;
+ 
+	-webkit-box-shadow:  0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+    		box-shadow:  0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+}
+#hiddencontainer {
+	display: none;
+}
+#vmCartModule .cartTitle {
+	font-weight:bold;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	font-size:14px;
+}
+#vmCartModule .show_cart {
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+#vmCartModule .show_cart a {
+	padding: 0px;
+	display: inline-block;
+	padding: 5px 10px;
+	float: none !important;
+	text-decoration:none;
+	font-weight:bold;
+}
+ 
+#vmCartModule .sub_total {
+	float: right;
+}
+.hide {
+	display: none;
+}
+
+#vmCartModule .total {
+	color: #666;
+	cursor: pointer;
+}
+#vmCartModule .total:hover, #vmCartModule.carthover .total {
+	 
+	cursor: pointer;
+}
+#vmCartModule .cartEmpty {
+	text-transform: none;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 16px;
+	font-size: 11px;
+	text-align: center;
+	padding: 10px 0px;
+}
+#vmCartModule .image {
+	display: block;
+}
+#vmCartModule .product_row {
+	width: 33%;
+	display: block;
+	float: left;
+	padding-bottom: 10px;
+}
+#vmCartModule .product_row:nth-child(3):after {
+	content:".";
+	visibility:hidden;
+	clear:both;
+}
+#vmCartModule .product_row_inner {
+	padding: 0 10px;
+}
+#vmCartModule .product_name_container, #vmCartModule .prices {
+	display: block;
+	text-align: center;
+	font-weight:bold;
+}
+#vmCartModule .remove_button {
+	visibility: hidden;
+	text-align: center;
+}
+#vmCartModule div.vm_cart_products div.container div.remove_button a.vm2-remove_from_cart.vmicon {
+	background:url(remove_from_cart.png) no-repeat;
+	margin-top:10px;
+	width:44px;
+	height:16px;
+}
+#vmCartModule .product_row:hover .remove_button {
+	visibility: visible;
+}
+#vmCartModule .product_attributes {
+	display: block;
+	text-align: center;
+	font-size:11px;
+}
+#vmCartModule .product_attributes {
+	display: block;
+	text-align: left;
+}
+#vmCartModule .image img {
+	max-width: 100%;
+}
+div#vmCartModule div.container a {
+	padding: 0px;
+}
+#product_list {
+        ' . $orientation . ':0px;
+		width:400px;
+		background-color:#fff;
+		color:#000;
+        }
+		#vmCartModule .cartTitle, #vmCartModule .show_cart {
+			border-bottom: 1px solid #ddd;
+		}
+		#vmCartModule .show_cart a {
+			background:#777;
+			color:#fff;	
+		}
+		#vmCartModule .show_cart a:hover {
+			background:#333;
+		}
+		div#vmCartModule span a {
+			color:#333;
+		}
+		div#vmCartModule span a:hover {
+			color:#000;
+		}
+		#vmCartModule {
+			background-color:;
+		}
+		#vmCartModule.carthover {
+			background-color:#eee;
+		}
+		#vmCartModule .total {
+			color: #333;
+		}
+		

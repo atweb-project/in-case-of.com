@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+  <name>SP Google Chart</name>
+  <author>JoomShaper.com</author>
+  <creationDate>Nov 2012</creationDate>
+  <copyright>Copyright (C) 2010 - 2012 JoomShaper.com. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>support@joomshaper.com</authorEmail>
+  <authorUrl>www.joomshaper.com</authorUrl>
+  <version>1.0.0</version>
+  <description>Google Chart module for Joomla 2.5 JoomShaper.com</description>
+  <languages>
+    <language tag="en-GB">language/en-GB.mod_sp_google_chart.ini</language>
+  </languages>
+  <files>
+    <filename module="mod_sp_google_chart">mod_sp_google_chart.php</filename>
+    <folder>tmpl</folder>
+    <filename>index.html</filename>
+  </files>
+  <config>
+    <fields name="params">
+		<fieldset name="Basic">
+			<field name="chart_data" type="textarea" rows="10" cols="30" default="['Task', 'Hours per Day'],['Work', 11],['Eat', 2],['Commute',2],['Watch TV', 2],['Sleep', 7]" label="DATA_CHART" description="DATA_CHART_DESC"/>
+			<field name="width" type="text" default="" label="WIDTH" description="WIDTH_DESC"/>
+			<field name="height" type="text" default="" label="HEIGHT" description="HEIGHT_DESC"/>
+			<field name="chart_title" type="text" default="Google Chart" label="CHART_TITLE" description="CHART_TITLE_DESC"/>
+			<field name="hAxis" type="text" default="" label="H_AXIS" description="H_AXIS_DESC"/>
+			<field name="vAxis" type="text" default="" label="V_AXIS" description="V_AXIS_DESC"/>
+			<field name="colors" type="text" default="" label="COLOR" description="COLOR_DESC"/>
+			<field name="is3D" type="radio" class="btn-group" default="0" label="3D" description="3D_DESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>			
+			</field>
+			<field name="chart_galllery" type="list" default="PieChart" label="CHART_GALLERY" description="CHART_GALLERY_DESC">
+				<option value="AreaChart">Area Chart</option>
+				<option value="BarChart">Bar Chart</option>
+				<option value="BubbleChart">Bubble Chart</option>
+				<option value="CandlestickChart">Candlestick Chart</option>
+				<option value="ColumnChart">Column Chart</option>
+				<option value="ComboChart">Combo Chart</option>
+				<option value="Gauge">Gauge Chart</option>
+				<option value="GeoChart">Geo Chart</option>
+				<option value="LineChart">Line Chart</option>
+				<option value="PieChart">Pie Chart</option>
+				<option value="ScatterChart">Scatter Chart</option>
+				<option value="SteppedAreaChart">Stepped Area Chart</option>
+				<option value="Table">Table Chart</option>
+				<option value="TreeMap">Tree Map Chart</option>						
+			</field>
+		</fieldset>
+		<fieldset name="advanced">
+			<field name="moduleclass_sfx" type="text" default="" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
+			<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+			  <option value="1">JGLOBAL_USE_GLOBAL</option>
+			  <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+			</field>
+			<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC"/>
+			<field name="cachemode" type="hidden" default="itemid">
+			  <option value="itemid"/>
+			</field>
+		</fieldset>
+    </fields>
+  </config>
+</extension>

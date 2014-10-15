@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : config.xml
+    Created on : 28 October 2009, 11:11
+    Author     : martin
+    Description:
+        Purpose of the document follows.
+-->
+
+<config>
+	<params addpath="/administrator/components/com_remository/elements">
+		<param name="id" type="remositorycats" label="Select Remository Category" description="Which category should the user see first?" default="0" />
+		<param name="sort_order" type="remositorysort" label="Sort Order for Files" description="Select the ordering to be applied to lists of files" default="2" />
+	</params>
+</config>

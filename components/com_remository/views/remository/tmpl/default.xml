@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<layout title="COM_REMOSITORY_WHOLE_REPOSITORY">
+		<message>Remository All Categories</message>
+	</layout>
+	<fields
+		name="request"
+		addfieldpath="/administrator/components/com_remository/models/fields"
+	>
+		<fieldset name="request">
+			<field
+				name="sort_order"
+				type="remositorysort"
+				label="Sort Order"
+				description="The order in which files are shown within folders"
+			/>
+		</fieldset>
+	</fields>
+</metadata>

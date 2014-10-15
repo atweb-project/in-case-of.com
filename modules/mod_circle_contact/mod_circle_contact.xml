@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+	<name>Circle Contact</name>
+	<author>Valentín García</author>
+	<creationDate>December 2012</creationDate>
+	<copyright>Copyright (C) 2012 Valentín García. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>htmgarcia@gmail.com</authorEmail>
+	<authorUrl>www.valentingarcia.com.mxg</authorUrl>
+	<version>1.0.0</version>
+	<description>
+		<![CDATA[
+		<style type='text/css'>
+		.panelform{ background-image:url(../templates/vg_laboratory/img/idea7.png); background-repeat:no-repeat; background-position:right top; }
+		.panelform .adminformlist li label
+			{text-align:right !important; font-family:Calibri; font-size:12px;}
+		
+		#jform_params_block1-lbl, #jform_params_block2-lbl, #jform_params_block3-lbl
+			{font-weight:bold;text-align:left !important;color:#fff;background:#333;border-radius:4px;padding:5px 15px;width:100% !important;font-family: Calibri;}
+		</style>
+		Circle Contact *for Simple Key Template only
+		]]>
+	</description>
+	<files>
+		<folder module="mod_circle_contact">ajax</folder>
+		<filename module="mod_circle_contact">mod_circle_contact.php</filename>
+		<filename module="mod_circle_contact">mod_circle_contact.xml</filename>
+		<filename module="mod_circle_contact">index.html</filename>		
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="block1" type="spacer" label="Form" />
+				<field name="emailto" type="text" default="" label="Email to:" description="The email account to receive the messages." />
+				<field name="block2" type="spacer" label="Info" />
+				<field name="justdata" type="textarea" default="" filter="raw" label="Custom Data (HTML allowed)" description="Leave in blank to disable" cols="55" rows="25" />
+				<field name="justsocial" type="textarea" default="" filter="raw" label="Social Networks (HTML allowed)" description="Leave in blank to disable" cols="55" rows="10" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

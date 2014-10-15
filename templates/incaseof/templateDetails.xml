@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.7//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.7/template-install.dtd">
+<extension version="2.5" type="template" client="site" method="upgrade">
+	<name>incaseof</name>
+	<version>1.2.3</version>
+	<creationDate>March 2013</creationDate>
+	<author>Valentín García</author>
+	<authorEmail>htmgarcia@gmail.com</authorEmail>
+	<authorUrl>http://www.valentingarcia.com.mx</authorUrl>
+    <copyright>Copyright (C) Valentín García 2012</copyright>
+    <license>http://www.gnu.org/licenses/gpl.html GNU/GPL</license>
+	<description>
+		<![CDATA[
+		SimpleKey. Info and Support: <a href="mailto:htmgarcia@gmail.com">htmgarcia@gmail.com</a><br/><a href="index.php?option=com_templates">Go to Template Manager</a> 
+		]]>
+	</description>
+	<files>
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>includes</folder>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>error.php</filename>
+		<filename>component.php</filename>
+		<filename>ajax.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>LICENSE.txt</filename>
+	</files>
+	<positions>
+		<position>simplekey-menu</position>
+		<position>simplekey-top</position>
+		<position>simplekey-slideshow</position>
+		<position>simplekey-onepagebottom</position>
+		<position>simplekey-onepagetop</position>
+		<position>simplekey-maintop</position>
+		<position>simplekey-mainbottom</position>
+		<position>simplekey-footerleft</position>
+		<position>simplekey-footerright</position>
+	</positions>
+	<languages>
+		<language tag="en-GB">en-GB.tpl_incaseof.ini</language>
+	</languages>
+	<config>
+		<fields name="params">	
+			<fieldset name="basic">		
+		    	<field name="vg_logo" type="media" label="Logo image" description="Choose a PNG image" />
+				<field name="vg_logo_2x" type="media" label="Logo image (HD)" description="Choose a PNG image" />
+				<field name="vg_analytics" type="text" label="Google analytics code" description="Add your Google analytics here. EXAMPLE: UA-11831410-01" default="" />
+				<field name="vg_css" type="textarea" label="Custom CSS" description="Set/Change your custom CSS class" default="" cols="35" rows="10" />
+				<field name="vg_gotop" type="list" default="1" label="Go Top button" description="Enable or Disable">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+				<field name="vg_loading" type="list" default="1" label="Loading mask" description="Enable or Disable">
+					<option value="1">Enabled</option>
+					<option value="0">Disabled</option>
+				</field>
+			</fieldset>
+			<fieldset name="ADVANCED">
+				<field name="vg_menu_one_page" type="text" default="mainmenu" label="Menu type" description="By default: mainmenu" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

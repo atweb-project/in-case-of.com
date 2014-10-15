@@ -1,0 +1,9 @@
+<div class="kmt-tnc-text">
+	<!-- <h2><?php echo JText::_( 'COM_KOMENTO_FORM_TNC' ); ?></h2> -->
+	<p>
+	<?php
+		$config = Komento::getConfig();
+		echo nl2br( $config->get( 'tnc_text' ) );
+	?>
+	</p>
+</div>

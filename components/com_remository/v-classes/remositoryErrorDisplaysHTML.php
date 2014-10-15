@@ -1,0 +1,239 @@
+<?php
+
+/**************************************************************
+* This file is part of Remository
+* Copyright (c) 2006 Martin Brampton
+* Issued as open source under GNU/GPL
+* For support and other information, visit http://remository.com
+* To contact Martin Brampton, write to martin@remository.com
+*
+* Remository started life as the psx-dude script by psx-dude@psx-dude.net
+* It was enhanced by Matt Smith up to version 2.10
+* Since then development has been primarily by Martin Brampton,
+* with contributions from other people gratefully accepted
+*/
+
+class remositoryErrorDisplaysHTML extends remositoryCustomUserHTML {
+	
+    public function genericError($container, $msg, $title = ''){
+	
+	echo <<<ERROR_PAGE
+	    {$this->pathwayHTML($container)}
+	    <h2 class="remositorywarning">{$this->show($title)}</h2>
+	    <p class="remositorywarning">
+		    {$this->show($msg)}
+	    </p>
+		
+ERROR_PAGE;
+    }
+    
+	public function noaccess ($fileorcontainer) {
+		if ($fileorcontainer instanceof remositoryFile OR $fileorcontainer instanceof remositoryContainer) {
+			$fileorcontainer->showCMSPathway();
+			$container = ($fileorcontainer instanceof remositoryFile ) ? $fileorcontainer->getContainer() : $fileorcontainer;
+			if ($container instanceof remositoryContainer ) echo $this->pathwayHTML($container);
+		}
+		echo <<<NO_ACCESS
+		
+		<h2>{$this->show(_DOWN_ACCESS_REFUSED)}</h2>
+		<p>
+			{$this->show(_DOWN_MAYBE_LOGIN)}
+		</p>
+		
+NO_ACCESS;
+
+		$this->filesFooterHTML ();
+		$this->remositoryCredits(false);
+	}
+	
+	public function uploadLimit () {
+		echo <<<UPLOAD_LIMIT
+		
+		<script type="text/javascript">alert('{$this->show(_ERR9)}')</script>
+		{$this->pathwayHTML(null)}
+		<br/>&nbsp;<br/>{$this->show(_DOWN_ALL_DONE)}
+		
+UPLOAD_LIMIT;
+
+	}
+
+	public function noFileDiagnostics ($user) {
+		$heading = _DOWN_NO_FILE_RECEIVED;
+		$errornum = isset($_FILES['userfile']['error']) ? $_FILES['userfile']['error'] : -1;
+		$error = $this->file_upload_error_message($errornum);
+		$filename = empty($_FILES['userfile']['name']) ? 'No file name provided' : remositoryRepository::getParam($_FILES[$key], 'name');
+		$filesize = empty($_FILES['userfile']['size']) ? 'No file size provided' : remositoryRepository::getParam($_FILES[$key], 'size', 0);
+		$tempfile = empty($_FILES['userfile']['tmp_name']) ? 'No file path provided' : $_FILES['userfile']['tmp_name'];
+		$isuploadednum = empty($_FILES['userfile']['tmp_name']) ? 0 : is_uploaded_file($tempfile);
+		$isuploaded = $this->yesno($isuploadednum);
+		
+		$phpuploads = $this->yesno($this->showPHP('file_uploads'));
+		
+		if ($user->isAdmin()) echo <<<DIAGNOSE_UPLOAD
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<th colspan="2" align="left">
+					$heading
+				</th>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="30%" align="right">
+					<strong>Error message: </strong>
+				</td>
+				<td>
+					$error
+				</td>
+			</tr>
+			<tr>
+				<td width="30%" align="right">
+					<strong>Real file name: </strong>
+				</td>
+				<td>
+					$filename
+				</td>
+			</tr>
+			<tr>
+				<td width="30%" align="right">
+					<strong>File size (bytes): </strong>
+				</td>
+				<td>
+					$filesize
+				</td>
+			</tr>
+			<tr>
+				<td width="30%" align="right">
+					<strong>Temporary file path: </strong>
+				</td>
+				<td>
+					$tempfile
+				</td>
+			</tr>
+			<tr>
+				<td width="30%" align="right">
+					<strong>Is it an uploaded file?: </strong>
+				</td>
+				<td>
+					$isuploaded
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="30%" align="right">
+					<strong>PHP file_uploads: </strong>
+				</td>
+				<td>
+					$phpuploads
+				</td>
+			</tr>
+			<tr>
+				<td width="30%" align="right">
+					<strong>PHP upload_tmp_dir: </strong>
+				</td>
+				<td>
+					{$this->showPHP('upload_tmp_dir')}
+				</td>
+			</tr>
+			<tr>
+				<td width="30%" align="right">
+					<strong>PHP upload_max_filesize: </strong>
+				</td>
+				<td>
+					{$this->showPHP('upload_max_filesize')}
+				</td>
+			</tr>
+			<tr>
+				<td width="30%" align="right">
+					<strong>PHP post_max_size: </strong>
+				</td>
+				<td>
+					{$this->showPHP('post_max_size')}
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="left">
+					<p>Points to watch out for are: <ul>
+					<li>There should be no error message (typically, zero will be displayed)</li>
+					<li>The real file name should correspond with the name of the file you sent</li>
+					<li>The file size should be the correct size for the file you sent</li>
+					<li>Temporary file path should look like a genuine specification for a file on the host system.  Its
+					precise character will vary across different systems.  It should be a valid path including the name of
+					the temporary file. If it is not overriden by the PHP config (see below) the temporary path will be
+					the system temporary directory with file name added. The file name is generated by the system.</li>
+					<li>If PHP is permitting file uploads, the file_uploads setting will be non zero.</li>
+					<li>There may be no temporary upload directory specified in the PHP config.
+					In this case, the system temporary directory will be used.
+					For a Unix style system, this defaults to /tmp but can be configured to be
+					anything. If the file path is specified, you would expect it to form part of the temporary file
+					path shown above, followed by the temporary name.  A temporary upload directory specified to PHP will
+					override the system temporary directory.</li>
+					<li>PHP will have a setting for the maximum permitted uploaded file size.</li>
+					<li>PHP also has a setting for the maximmum POST size, and the file upload is a POST
+					so the setting must be at least a little larger than the maximum permitted upload
+					size, or it will be a constraint on uploads.</li>
+					</ul><br/>
+					Note that the PHP settings cannot be overriden by a program like Remository.  If they
+					are too restrictive, you need to talk to your hosting provider, or consider altering
+					your PHP configuration if it is under your own control.
+					</p>
+				</td>
+			</tr>
+		</table>
+	
+DIAGNOSE_UPLOAD;
+		
+		else $this->uploadError($heading);
+	}
+
+	protected function file_upload_error_message($error_code) {
+	    switch ($error_code) {
+	        case UPLOAD_ERR_INI_SIZE:
+	            return 'The uploaded file exceeds the upload_max_filesize directive in php.ini';
+	        case UPLOAD_ERR_FORM_SIZE:
+	            return 'The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form';
+	        case UPLOAD_ERR_PARTIAL:
+	            return 'The uploaded file was only partially uploaded';
+	        case UPLOAD_ERR_NO_FILE:
+	            return 'No file was uploaded';
+	        case UPLOAD_ERR_NO_TMP_DIR:
+	            return 'Missing a temporary folder';
+	        case UPLOAD_ERR_CANT_WRITE:
+	            return 'Failed to write file to disk';
+	        case UPLOAD_ERR_EXTENSION:
+	            return 'File upload stopped by extension';
+	        default:
+	            return 'Unknown upload error';
+	    }
+	}
+	
+	protected function yesno ($bool) {
+		return $bool ? _YES : _NO;	
+	}
+
+	protected function showPHP ($inivalue) {
+		return ini_get($inivalue);
+	}
+	
+	public function uploadError ($message) {
+		echo <<<SIMPLE_ERROR
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<th colspan="2" align="left">
+					$message
+				</th>
+			</tr>
+		</table>
+		
+SIMPLE_ERROR;
+		
+	}
+}

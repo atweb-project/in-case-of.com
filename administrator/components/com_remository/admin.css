@@ -1,0 +1,104 @@
+/* Admin side CSS for Remository */
+
+.icon-48-remository {
+	background-image: url(/components/com_remository/images/remository-48.png);
+}
+
+.remositoryred {
+	color: red;
+}
+#remositoryedit {
+	width: 960px;
+	padding: 0;
+	margin: 0;
+}
+
+#remositoryedit label, #remositoryedit input {
+	font-size: 11px;
+}
+
+.remositoryblock {
+	width: 100%;
+	height: 10px;
+	background: #DDD;
+	border-bottom: 2px solid #888;
+	margin-bottom: 5px;
+}
+
+#remositoryclist {
+	margin-top: 3px;
+}
+
+#remositoryedit legend {
+	font-weight: bold;
+	font-size: 14px;
+	background: #DDD;
+	border: 1px solid #CCC;
+	border-bottom-color: #999;
+	border-right-color: #999;
+}
+
+.remositoryaccessselector legend {
+	color: #666;
+	font-size: 12px;
+}
+
+#remositoryiconlist {
+	width: 400px;
+}
+
+#remositoryiconlist div {
+	padding: 5px;
+}
+
+#remositoryiconlist img {
+	border: 1px solid #CCC;
+	margin: 2px;
+}
+
+#remositorycontainermain {
+	width:550px;
+	padding:20px 0;
+	float:left;
+}
+
+#remositorycontainermain div {
+	padding: 5px 0 15px 0;
+}
+
+.remositoryfieldset {
+	float:right;
+	clear:right;
+	width:350px;
+	padding-top:15px;
+}
+
+#remositorycontainermain .remositoryfieldset {
+	width: 550px;
+}
+
+.remositoryfieldset div {
+	padding: 3px 0;
+}
+
+.remositoryaccessselector {
+	padding:10px 0;
+}
+
+.remositoryaccessselector div {
+	padding: 5px;
+}
+
+#remositorysupport {
+	text-align: left;
+	padding-left: 30px;
+}
+
+#remositorysupport form {
+	padding-left: 40px;
+}
+
+td.remositoryexplain {
+	font-weight: bold;
+	font-style: italic;
+}

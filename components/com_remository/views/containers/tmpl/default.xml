@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<layout title="Single Category">
+		<message>Show a Category</message>
+	</layout>
+	<fields
+		name="request"
+		addfieldpath="/administrator/components/com_remository/models/fields"
+	>
+		<fieldset name="request">
+			<field
+				name="id"
+				type="remository"
+				label="Category Name"
+				description="The name of the Remository category to be shown"
+			/>
+			<field
+				name="sort_order"
+				type="remositorysort"
+				label="Sort Order"
+				description="The order in which files are shown within folders"
+			/>
+		</fieldset>
+	</fields>
+</metadata>

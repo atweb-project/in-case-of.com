@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*
+	Copyright 2013. Valentin Garcia.
+*/
+
+@import url(fonts.css?family=league+gothic&subset=latin,latin-ext);
+@import url(fonts.css?family=infinity&subset=latin,latin-ext);
+@import url(css/fonts.css?family=nexa+lightregular&subset=latin,latin-ext);
+@import url(fonts.css?family=nexa+boldregular&subset=latin,latin-ext);
+
+.vg-firstTitle{ font:160px/140px 'league_gothic'; }
+.vg-secondTitle{ font:72px/60px 'infinity'; }
+.vg-thirdTitle{ font:100px/80px 'league_gothic'; }
+.vg-fourthTitle{ font:36px/30px 'infinity'; }

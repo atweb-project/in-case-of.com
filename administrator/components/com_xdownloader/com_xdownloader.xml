@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+	<name>COM_XDOWNLOADER</name>
+	<creationDate>February 2012</creationDate>
+	<author>xrbyte</author>
+	<authorEmail>xrbyte@live.com</authorEmail>
+	<authorUrl>http://xrbyte.com</authorUrl>
+	<copyright>Copyright (C) xrbyte.com 2012</copyright>
+	<license>http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPL</license>
+	<version>1.0.5 (alpha)</version>
+	<description><![CDATA[
+		<p>xDownloader alpha is a component for secure download files from CMS.<br />Required xDownloader alpha plug-in.</p>]]></description>
+
+	<!-- Runs on install/uninstall/update; New in 1.7 -->
+	<scriptfile>script.php</scriptfile>
+	
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	
+<!--	<update>  Runs on update; New in 1.7 -->
+<!--		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update> -->
+	
+	<languages folder="language">
+		<language tag="en-GB">site/en-GB.com_xdownloader.ini</language>
+	</languages>
+		
+	<files folder="site">
+        <filename>index.html</filename>
+        <filename>controller.php</filename>
+        <filename>xdownloader.php</filename>
+		<filename>license.txt</filename>
+		<folder>helpers</folder>
+		<folder>models</folder>
+	</files>
+
+	<administration>
+		<menu link="option=com_xdownloader">COM_XDOWNLOADER_MENU</menu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>xdownloader.php</filename>
+			<filename>license.txt</filename>
+			<folder>sql</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+		
+	<languages folder="language">
+		<language tag="en-GB">admin/en-GB.com_xdownloader.ini</language>
+		<language tag="en-GB">admin/en-GB.com_xdownloader.sys.ini</language>
+	</languages>		
+	</administration>	
+</extension>

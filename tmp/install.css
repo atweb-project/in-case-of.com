@@ -1,0 +1,154 @@
+/* rockettheme */
+#rokinstall-logo {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL8AAACQCAMAAABuzkrXAAAAA3NCSVQICAjb4U/gAAABgFBMVEX///////+8v8Xm5uzlxp9rcXfFyNDe3uLMzMzt7/P3+Pu8vb2gpau1tbnW193X1dWtr7MYGRkPEBDvyaVISE1/hIhSUlPGxMNmZmaSlJgqKSntzbCstb2krLXMAABaXFp3dnnQnHIICAhAQD91eoU5OjkhIiLkrH6Oi4+anamWm6XkvptXX2avkHDn+PyvABKshF5fanPw1bx/jpSQbUUpMTHitZKZmZnMsY8zMzP51bHDi1ycdlW/AAnF197zIA7MmWbPpnziIxvDmIHjDAAAAADNKA24ys2uLxr////N5er04cy5eGynd0nvOAbzIA778dS8UDsLY5alABh2WT6vck+vKAlOJBurPDWpDgCxlJAAAADVOSjzFABaXFqMYDsJKS2eXj3jOySFDQkPEBDd6e3vwpeUbljjDAA6QENzJR3///9ISE0Pda7UsLB3ZVQRMDUqKSm8sLMYGRlhMikYGRndkIRoR0KHPiZaXFpbGgmlABgAAADiIxtAQD/bz8tZ079SAAAAgHRSTlMA////////////////////////////////////////////////////////////////////////////////////////////////Iv//////RP///7v/////////u///Ef//////7v///0T//xFE/////+7/7v9E////iP//EczM/3h8EG8AAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAVdEVYdENyZWF0aW9uIFRpbWUAMi8xOC8xMRg4M+sAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzVxteM2AAAfoUlEQVR4nO19CVvb1rZ2JFnzYMlo9BALD/Lsi7GxMaYufMSGQ4ATEmY4QJjhOgwhTihNnL9+15aZ0qa3vc8XTM/znLettDUA71p77TVsaavPnv0Hf4b2HT5/fmou/1cA6fX1vcvLy4uLi8vL9fV1OPHUnP4yNoG7z6mqYVJLWhUrqdmm6t9DMjw1s7+CVmcv4oSTAs/QBMsSBEHTkpcRk2G/b3299dTs/gytzqUvrsmIO8dhGMYBWCQD7RWtsLP395Zgs4XY814J2GMPgYSgvYxgOnudv68ErQul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);}
+
+.rokinstall-icon > span {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAABfCAMAAADMH1dkAAABjFBMVEX///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADy8vK/v78AAAAAAAAAAACJiYnj4+P7+/sAAAAAAAD39/f6+voAAAAAAABBQUEAAAAAAAAAAAA/Pz8AAAAAAADo6OgAAAAAAACLi4sAAAAAAADAwMC4uLj6+voAAACysrIAAAAAAADt7e3h4eEAAAC9vb0AAADi4uI9PT0AAADJyckAAABpaWmxsbHp6ekAAAAAAAC8vLzi4uIAAACGhoY5OTk8PDwAAADm5uZiYmIAAAAAAABvb2/l5eVsbGze3t5ERESOjo7u7u7j4+Ps7Ozx8fEAAACDg4M3NzcAAACZmZnQ0ND39/fHx8fz8/NycnLd3d22trY7OzsAAADk5OQAAAAAAADa2trExMSrq6sAAACYmJh+fn4AAAAAAAAAAADT09PPz89kZGSIiIhGRkYAAAAAAADCwsKRkZG6urqVlZXDw8Pg4ODg4OD29vbs7Ozh4eHy8vLe3t7Dw8P////6xlMmAAAAg3RSTlMAAAgmGAYWDyEqFR8OJQHbgCMRMVmy8yco5/MaCT4LExBABy7BNBxYJCB/hfQechQszrUKgQWzQheOPE1zwB0tgrQvW0dEDMNTKQ1Jsku3PFbNs8/cN11JEmqJ5o/aR6WGRSvEOhuokV8Ca2E2OzKanVFaOjA/k1SDUpK2tejOtNqkfR5eDHUAAALkSURBVHhe7dbXc9pMEADwCBWQhASSCKBQTTU1gB33uHfHcfyl9t57L18t+49Ht0J3wvgtL/GM9+lmfnNFe3d7OvETwR0MMWgGRY47FANSSAtJAYZ+E/hz+xlNEodRTwv8bwCRTCiISGchDbOSdAzgrGYi0llIw1hYInaq2u+Js8TrvJDNCnymhxbj+3OeOT1KRoomVTU5Eumb0F/tmPAMSIxb1qTPOK/nSdTGqt84OqerTWYUqTJjyJQZQ6bMGKLeBbhZZcYQs5SQE5gnP9JdzCk5zDDFoxjH4V2hQj6nKEouX9CHNls0U0ZCluWEkTLFAcQr1Jmd7nVL07MdY2pMP3D6dkvgRnc3MT/lHBgPRYmPxcGL+Mryg0RNEV3UTaPqmH1rpXzlaROguXl9/0Yr7GIh1bkNcHFyIcEXL1+9hN3btT6Ga22AyEiyIuX48swXHLpYCbiYN+Zs+NaZz+rXjFmbGCxtKTqivj1annn5Sn6c1sOtO70mQVoTCoJc2rh339KmxtKKUVxrPARbFgouBkNVcKJUN5RA4XTIevR5pjy6rSPqytYTwPiaWueeV4ovmn/EjDyHGKgUcRHnN5db62klZHUB6rWwi3kjBoiv32jzFa3YA7A7qYKLpvY2/q7h6MZ7a6H4oUsyYJi6i8Hax8wna9xRsLuY4SgvefVWVFq1lpqc8zJvz/nrkBgOp0nZmy7FwS4tZtCGawIJrAuH1QQSWBcQj2wcVwVyGnAbadOHAUlV8QDQJkVy6y/s4dHB5k7/xfbewTpERnghTZ7sKMS9O+a+oN8BiKbyKcfoi01fUFSZl4lBG3uyOVHXyoveiWdI9Xc0sjSGRJMT4MZ40rEB5LKq9Sdaw1Kz3DA2iP21StE/7DhgRCYHhyWG3wd/4xcNLIjaYvkfVP+niJJrUScJmI2MLwlhdQcN00cU00dx719imHiidV9PUdIyE226Zf/9798y+rd06Gaz/yx2TH7J+AE2SMy25fgy+AAAAABJRU5ErkJggg==);}
+
+body table.adminform th {
+	text-align:center !important;
+	font-size:18px;
+	padding-bottom:20px;
+	color:#555;
+	font-family:Helvetica,Arial,sans-serif
+}
+
+#rokinstall-logo {
+	background-repeat:no-repeat;
+	min-height:125px;
+	padding-top:15px;
+	padding-right:100px;
+	background-position:50px 50%
+}
+
+#rokinstall-status {
+	font-family:Helvetica,Arial,sans-serif;
+	font-size:14px;
+	font-weight:700;
+	color:#444;
+	text-shadow:1px 1px 0 #fff;
+	margin:0 0 20px 260px;
+	padding: 25px 25px 10px 25px;
+	border:1px solid #cecece;
+	background:#f4f4f4;
+	-moz-box-shadow:inset 0 1px 4px rgba(0,0,0,0.1);
+	-webkit-box-shadow:inset 0 1px 4px rgba(0,0,0,0.1);
+	box-shadow:inset 0 1px 4px rgba(0,0,0,0.1);
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px
+}
+
+#rokinstall-status li {
+	-moz-box-shadow:inset 0 1px 3px rgba(0,0,0,0.1);
+	-webkit-box-shadow:inset 0 1px 3px rgba(0,0,0,0.1);
+	box-shadow:inset 0 1px 3px rgba(0,0,0,0.1);
+	-webkit-border-radius:16px;
+	-moz-border-radius:16px;
+	border-radius:16px;
+	margin-bottom:15px;
+	text-indent:10px
+}
+
+.rokinstall-icon > span {
+	display:block;
+	width:32px;
+	height:32px
+}
+
+#rokinstall-status .rokinstall-row {
+	display:block;
+	height:32px;
+	line-height:32px;
+	border-radius:16px;
+	white-space:nowrap;
+	padding-right:25px
+}
+
+.rokinstall-icon {
+	display:inline-block;
+	background-repeat:no-repeat;
+	height:32px;
+	width:32px;
+	float:left;
+	-webkit-border-radius:16px;
+	-moz-border-radius:16px;
+	border-radius:16px;
+	-moz-box-shadow:inset 0 2px 4px rgba(0,0,0,0.2);
+	-webkit-box-shadow:inset 0 2px 4px rgba(0,0,0,0.2);
+	box-shadow:inset 0 2px 4px rgba(0,0,0,0.2)
+}
+
+#rokinstall-status {
+	list-style:none
+}
+
+
+
+
+/* SUCCESS */
+.rokinstall-success {
+	background:#e6f0d7
+}
+
+.rokinstall-success .rokinstall-icon {
+	background:#7db947;
+	background:-webkit-linear-gradient(#7db947,#9ace6a);
+	background:-moz-linear-gradient(#7db947,#9ace6a);
+	background:-o-linear-gradient(#7db947,#9ace6a);
+	background:-ms-linear-gradient(#7db947,#9ace6a);
+	background:linear-gradient(#7db947,#9ace6a)
+}
+
+.rokinstall-success .rokinstall-icon > span {
+	background-position:3px 6px
+}
+
+#rokinstall-status {
+	list-style:none
+}
+
+/* UPDATE */
+.rokinstall-update {
+	background:#e9eef2
+}
+
+.rokinstall-update .rokinstall-icon {
+	background:#297ab7;
+	background:-webkit-linear-gradient(#297ab7,#338dcf);
+	background:-moz-linear-gradient(#297ab7,#338dcf);
+	background:-o-linear-gradient(#297ab7,#338dcf);
+	background:-ms-linear-gradient(#297ab7,#338dcf);
+	background:linear-gradient(#297ab7,#338dcf)
+}
+
+.rokinstall-update .rokinstall-icon > span {
+	background-position:3px -29px
+}
+
+/* FAILURE */
+.rokinstall-failure {
+	background:#fdf1f1;
+	color:#bd4648;
+}
+
+.rokinstall-failure .rokinstall-icon {
+	background:#c93130;
+	background:-webkit-linear-gradient(#c93130,#f53b3b);
+	background:-moz-linear-gradient(#c93130,#f53b3b);
+	background:-o-linear-gradient(#c93130,#f53b3b);
+	background:-ms-linear-gradient(#c93130,#f53b3b);
+	background:linear-gradient(#c93130,#f53b3b)
+}
+
+.rokinstall-failure .rokinstall-icon > span {
+	background-position:3px -64px
+}
+
+.rokinstall-failure .rokinstall-errormsg {
+	text-indent:42px;
+	display:block;
+	padding-bottom: 10px;
+	color:#bd4648;
+	font-weight: normal;
+	font-size: 13px;
+
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="filterdates">
+		<field name="filter_date"
+			type="calendar"
+			size="20" 
+			label="Date" 
+			description="Searching by date" 
+			format="%Y-%m-%d"/>
+		<field name="filter_datefrom"
+			type="calendar"
+			size="20" 
+			label="Date from" 
+			description="Searching by date from" 
+			format="%Y-%m-%d %H:%M"/>
+		<field name="filter_dateto"
+			type="calendar"
+			size="20" 
+			label="Date to" 
+			description="Searching by date to" 
+			format="%Y-%m-%d %H:%M"/>
+	</fieldset>
+</form>

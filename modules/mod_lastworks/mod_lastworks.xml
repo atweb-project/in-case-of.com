@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site">
+	<name>Last Works</name>
+	<author>Valentín García</author>
+	<creationDate>March 2013</creationDate>
+	<copyright>Copyright (C) 2012 Valentín García.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>htmgarcia@gmail.com</authorEmail>
+	<authorUrl>www.valentingarcia.com.mx</authorUrl>
+	<version>1.0.4</version>
+	<description>
+		<![CDATA[
+		<h2>Last Works</h2>
+		<p>Designed for SimpleKey. <b>Last Works</b> show your last articles as portfolio showcase.<br /><br />
+		Info and support: <a href="http://www.valentingarcia.com.mx" target="_blank"><span style="opacity:0.5;">www.</span><span style="font-weight:bold;">valentin</span><span style="font-weight:normal;">garcia</span><span style="opacity:0.5;">.com.mx</span></a>
+		</p>
+		<style type='text/css'>
+		.panelform .adminformlist li label
+			{text-align:right !important; font-family:Calibri; font-size:12px;}
+		
+		#jform_params_logo_separator-lbl,#jform_params_cover_css_separator-lbl,#jform_params_cover_separator-lbl,#jform_params_main_text_separator-lbl,#jform_params_images_main_separator-lbl,#jform_params_images_next_separator-lbl,#jform_params_next_text_separator-lbl,#jform_params_main_css_separator-lbl,#jform_params_next_css_separator-lbl
+			{font-weight:bold;text-transform:uppercase;text-align:left !important;color:#fff;background:#c3c3c3;border-radius:4px;padding:5px 15px;width:100% !important;font-family: Calibri;}
+		</style>
+		]]>
+	</description>
+	<files>
+		<filename module="mod_lastworks">mod_lastworks.php</filename>
+		<filename module="mod_lastworks">index.html</filename>
+		<filename module="mod_lastworks">helper.php</filename>
+		<filename module="mod_lastworks">LICENSE.txt</filename>
+		<filename module="mod_lastworks">icon.png</filename>
+		<folder module="mod_lastworks">tmpl</folder>
+		<folder module="mod_lastworks">js</folder>
+		<folder module="mod_lastworks">css</folder>
+		<folder module="mod_lastworks">images</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_lastworks.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="BASIC">
+				<field name="vgcategories" type="category" extension="com_content" multiple="true" size="10" default="" label="Category" description="Category" >
+					
+				</field>
+				<field name="vgfilter" type="list" default="any" label="Filter Articles" description="Filter (only for Category)">
+					<option value="any">Any</option>
+					<option value="no_feat">No Featured</option>
+					<option value="feat">Just Featured</option>
+				</field>
+				<field name="vgorderingtype" type="list" default="created" label="Ordering type" description="Ordering type (only for Category)">
+					<option value="created">By Creation Date</option>
+					<option value="modified">By Modified Date</option>
+					<option value="ordering">By Order</option>
+				</field>
+				<field name="vgordering" type="list" default="ASC" label="Ordering" description="Ordering (only for Category)">
+					<option value="ASC">ASC</option>
+					<option value="DESC">DESC</option>
+				</field>
+				<field
+					name="vgnumarticles"
+					type="text"
+					default="6"
+					label="Number of articles to show"
+					description="(Insert a number) EXAMPLE:9" />
+				<!--field
+					name="vgtextlong"
+					type="text"
+					default="50"
+					label="Intro Text long"
+					description="(Insert a number) EXAMPLE:100" /-->
+				<!--field name="vgimages" type="list" default="1" label="Images" description="Show images (if the article has it">
+					<option value="1">Show</option>
+					<option value="0">Hide</option>
+				</field-->
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="vglayout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+	
+			</fieldset>
+		</fields>
+	</config>
+</extension>

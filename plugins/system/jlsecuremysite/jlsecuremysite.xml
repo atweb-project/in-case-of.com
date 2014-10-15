@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system">
+        <name>plg_system_jlsecuremysite</name>
+	<author>JomLand</author>
+	<authorEmail>info@jomland.com</authorEmail>
+	<authorUrl>http://www.jomland.com</authorUrl>
+	<copyright>Copyright (C) 2012 jomland.com. All rights reserved.</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+        <creationDate>May 2011</creationDate>
+        <version>1.0.2</version>
+        <description>PLG_JLSECUREMYSITE_XML_DESCRIPTION</description>
+        <files>
+                <filename plugin="jlsecuremysite">jlsecuremysite.php</filename>
+                <filename>index.html</filename>
+        </files>
+
+	<languages>
+	        <language tag="en-GB">language/en-GB/en-GB.plg_system_jlsecuremysite.ini</language>
+	</languages>
+
+        <administration>
+		<languages folder="admin">
+		        <language tag="en-GB">language/en-GB/en-GB.plg_system_jlsecuremysite.ini</language>
+		        <language tag="en-GB">language/en-GB/en-GB.plg_system_jlsecuremysite.sys.ini</language>
+		</languages>
+        </administration>
+
+        <config>
+                <fields name="params">
+                        <fieldset name="basic">
+                                <field  name="secure_key" type="text"
+                                        default="secure_key"
+                                        description="PLG_JLSECUREMYSITE_FIELD_SECURE_KEY_DESC"
+                                        label="PLG_JLSECUREMYSITE_FIELD_SECURE_KEY_LABEL"
+                                >
+                                </field>
+
+                                <field  name="secure_value" type="text"
+                                        default="secure_value"
+                                        description="PLG_JLSECUREMYSITE_FIELD_SECURE_VALUE_DESC"
+                                        label="PLG_JLSECUREMYSITE_FIELD_SECURE_VALUE_LABEL"
+                                        >
+                                </field>
+                        </fieldset>
+                </fields>
+        </config>
+</extension>
+

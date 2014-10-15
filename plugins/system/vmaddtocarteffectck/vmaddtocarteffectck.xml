@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system">
+    <name>plg_system_vmaddtocarteffectck</name>
+    <author>Cédric KEIFLIN</author>
+    <creationDate>Aout 2011</creationDate>
+    <copyright>Cédric KEIFLIN</copyright>
+    <license>http://www.gnu.org/licenses/gpl.html</license>
+    <authorEmail>ced1870@gmail.com</authorEmail>
+    <authorUrl>http://www.joomlack.fr</authorUrl>
+    <version>1.0.1</version>
+    <description>PLG_VMADDTOCARTEFFECTCK_XML_DESCRIPTION</description>
+	
+    <files>
+        <filename plugin="vmaddtocarteffectck">vmaddtocarteffectck.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+    </files>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_vmaddtocarteffectck.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_vmaddtocarteffectck.sys.ini</language>
+		<language tag="fr-FR">language/fr-FR/fr-FR.plg_system_vmaddtocarteffectck.ini</language>
+		<language tag="fr-FR">language/fr-FR/fr-FR.plg_system_vmaddtocarteffectck.sys.ini</language>
+	</languages>
+		
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="duration" type="text" default="240" label="PLG_VMADDTOCARTEFFECTCK_DURATION_LABEL" description="PLG_VMADDTOCARTEFFECTCK_DURATION_DESC" />
+				<field name="transition" type="list" default="linear" label="PLG_VMADDTOCARTEFFECTCK_TRANSITION_LABEL" description="PLG_VMADDTOCARTEFFECTCK_TRANSITION_DESC" >
+					<option value="linear">Linear</option>
+					<option value="jswing">jswing</option>
+					<option value="easeInQuad">easeInQuad</option>
+					<option value="easeOutQuad">easeOutQuad</option>
+					<option value="easeInOutQuad">easeInOutQuad</option>
+					<option value="easeInCubic">easeInCubic</option>
+					<option value="easeOutCubic">easeOutCubic</option>
+					<option value="easeInOutCubic">easeInOutCubic</option>
+					<option value="easeInQuart">easeInQuart</option>
+					<option value="easeOutQuart">easeOutQuart</option>
+					<option value="easeInOutQuart">easeInOutQuart</option>
+					<option value="easeInSine">easeInSine</option>
+					<option value="easeOutSine">easeOutSine</option>
+					<option value="easeInOutSine">easeInOutSine</option>
+					<option value="easeInExpo">easeInExpo</option>
+					<option value="easeOutExpo">easeOutExpo</option>
+					<option value="easeInOutExpo">easeInOutExpo</option>
+					<option value="easeInQuint">easeInQuint</option>
+					<option value="easeOutQuint">easeOutQuint</option>
+					<option value="easeInOutQuint">easeInOutQuint</option>
+					<option value="easeInCirc">easeInCirc</option>
+					<option value="easeOutCirc">easeOutCirc</option>
+					<option value="easeInOutCirc">easeInOutCirc</option>
+					<option value="easeInElastic">easeInElastic</option>
+					<option value="easeOutElastic">easeOutElastic</option>
+					<option value="easeInOutElastic">easeInOutElastic</option>
+					<option value="easeInBack">easeInBack</option>
+					<option value="easeOutBack">easeOutBack</option>
+					<option value="easeInOutBack">easeInOutBack</option>
+					<option value="easeInBounce">easeInBounce</option>
+					<option value="easeOutBounce">easeOutBounce</option>
+					<option value="easeInOutBounce">easeInOutBounce</option>
+			   </field>
+			   <field name="offsetx" type="text" default="10" label="PLG_VMADDTOCARTEFFECTCK_OFFSETX_LABEL" description="PLG_VMADDTOCARTEFFECTCK_OFFSETX_DESC" />
+			   <field name="offsety" type="text" default="10" label="PLG_VMADDTOCARTEFFECTCK_OFFSETY_LABEL" description="PLG_VMADDTOCARTEFFECTCK_OFFSETY_DESC" />
+			   <field name="productimageclass" type="text" default="product-image" label="PLG_VMADDTOCARTEFFECTCK_PRODUCTIMAGECLASS_LABEL" description="PLG_VMADDTOCARTEFFECTCK_PRODUCTIMAGECLASS_DESC" />
+			   <field name="categoryimageclass" type="text" default="browseProductImage" label="PLG_VMADDTOCARTEFFECTCK_CATEGORYIMAGECLASS_LABEL" description="PLG_VMADDTOCARTEFFECTCK_CATEGORYIMAGECLASS_DESC" />
+			   <field name="categorycontainerclass" type="text" default="spacer" label="PLG_VMADDTOCARTEFFECTCK_CATEGORYCONTAINERCLASS_LABEL" description="PLG_VMADDTOCARTEFFECTCK_CATEGORYCONTAINERCLASS_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

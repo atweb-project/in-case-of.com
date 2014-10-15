@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site">
+	<name>My Twitter</name>
+	<author>Valentín García</author>
+	<creationDate>January 2013</creationDate>
+	<copyright>Copyright (C) 2012 Valentín García.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>htmgarcia@gmail.com</authorEmail>
+	<authorUrl>www.valentingarcia.com.mx</authorUrl>
+	<version>2.0.0</version>
+	<description><![CDATA[
+		<h2>My Twitter</h2>
+		<p>Info and support: <a href="http://www.valentingarcia.com.mx" target="_blank"><span style="opacity:0.5;">www.</span><span style="font-weight:bold;">valentin</span><span style="font-weight:normal;">garcia</span><span style="opacity:0.5;">.com.mx</span></a></p>
+		<style type='text/css'>
+		.panelform .adminformlist li label
+			{text-align:right !important; font-family:Calibri; font-size:12px;}
+		
+		#jform_params_logo_separator-lbl,#jform_params_cover_css_separator-lbl,#jform_params_cover_separator-lbl,#jform_params_main_text_separator-lbl,#jform_params_images_main_separator-lbl,#jform_params_images_next_separator-lbl,#jform_params_next_text_separator-lbl,#jform_params_main_css_separator-lbl,#jform_params_next_css_separator-lbl
+			{font-weight:bold;text-transform:uppercase;text-align:left !important;color:#fff;background:#c3c3c3;border-radius:4px;padding:5px 15px;width:100% !important;font-family: Calibri;}
+		</style>
+		]]>
+	</description>
+	<files>
+		<filename module="mod_mytwitter">mod_mytwitter.php</filename>
+		<filename module="mod_mytwitter">index.html</filename>
+		<filename module="mod_mytwitter">LICENSE.txt</filename>
+		<folder module="mod_mytwitter">tmpl</folder>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="BASIC">
+				<field name="vg_html" type="textarea" label="HTML widget from Twitter" description="Add HTML generated from your Twitter account" filter="raw" default="" cols="35" rows="10" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="vglayout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+	
+			</fieldset>
+		</fields>
+	</config>
+</extension>
