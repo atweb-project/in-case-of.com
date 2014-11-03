@@ -3634,3 +3634,341 @@ message: plgVmOnPaymentNotification return new_status:C
 
 2014-10-15 17:42:17
 message: Notification: emptyCart 0b3a5e6935a819d87b14ec1aa3f9788a
+
+2014-10-16 18:44:51
+message: plgVmConfirmedOrder order number: eade046
+
+2014-10-16 18:48:08
+message: paypal_data 170.94   eade046   Eligible   unconfirmed   SJMZVLXQQC7SE   0.00   10 East 29th St
+Apt 46E   11:47:53 Oct 16, 2014 PDT   Completed   windows-1253   10016   scott   7.02   US   Scott Roberts   3.8   c7c1db3937cdc3d7b97760d4a5c0f9d0   unverified   salespaypal@in-case-of.com   United States   New York   1   AdTGBgLJqHB6BwcvxY6ANgjjL6RcAjuiim7ZjHG5PN2vWJBoOdEGQ.GO   scott@logoup.com   0JK57649V9019380A   instant   roberts   NY   salespaypal@in-case-of.com      R5724U3JCWYYL   web_accept   Order Number: eade046   EUR      US   0.00   c7c1db3937cdc3d7b97760d4a5c0f9d0      0.00   707592fe3f31f
+
+2014-10-16 18:48:08
+message: checkPaypalIps: 172.227.98.234,173.0.81.1,173.0.81.33,216.113.188.202,216.113.188.203,216.113.188.204,66.211.170.66 server is:173.0.81.1
+
+2014-10-16 18:48:08
+message: checkPaypalIps:  OK
+
+2014-10-16 18:48:08
+message: _processIPN Fputs: POST /cgi-bin/webscr HTTP/1.0
+User-Agent: PHP/5.3.29
+Referer: in-case-of.com/index.phpoption=com_virtuemart&view=pluginresponse&task=pluginnotification&tmpl=component
+Server: Apache
+Host: www.paypal.com:443
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 1058
+Accept: */*
+
+cmd=_notify-validate&mc_gross=170.94&invoice=eade046&protection_eligibility=Eligible&address_status=unconfirmed&payer_id=SJMZVLXQQC7SE&tax=0.00&address_street=10+East+29th+St%0D%0AApt+46E&payment_date=11%3A47%3A53+Oct+16%2C+2014+PDT&payment_status=Completed&charset=windows-1253&address_zip=10016&first_name=scott&mc_fee=7.02&address_country_code=US&address_name=Scott+Roberts&notify_version=3.8&custom=c7c1db3937cdc3d7b97760d4a5c0f9d0&payer_status=unverified&business=salespaypal%40in-case-of.com&address_country=United+States&address_city=New+York&quantity=1&verify_sign=AdTGBgLJqHB6BwcvxY6ANgjjL6RcAjuiim7ZjHG5PN2vWJBoOdEGQ.GO&payer_email=scott%40logoup.com&txn_id=0JK57649V9019380A&payment_type=instant&last_name=roberts&address_state=NY&receiver_email=salespaypal%40in-case-of.com&payment_fee=&receiver_id=R5724U3JCWYYL&txn_type=web_accept&item_name=Order+Number%3A+eade046&mc_currency=EUR&item_number=&residence_country=US&handling_amount=0.00&transaction_subject=c7c1db3937cdc3d7b97760d4a5c0f9d0&payment_gross=&shipping=0.00&ipn_track_id=707592fe3f31f
+
+2014-10-16 18:48:08
+message: _processIPN FROM IPN VALIDATION:HTTP/1.0 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html; charset=UTF-8
+DC: slc-b-origin-www-1.paypal.com
+Date: Thu, 16 Oct 2014 18:48:10 GMT
+Content-Length: 8
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=_DTYI4GG3ky3xeBP2vc8ibYW4FouMKuqcNPh9_a1P206vneoNmVHnSaBucLHFgvdSZ6g9BHlnwvpuZQSjEi5wGr8zfqpZbtESx0n8INIZkueS2LFa1FhefPHm8iiIHkghgpssojtrSCgOOe4evRxF39M7kebkC730aIKdGfqCkiUI3w_6Fl2PXQgobveLIeK5tI7bfhEkXp5T_X2heQehHI5iFci5DJ8JsxnnoWHSeOI7cu40lvqwx-oAFAQN-nCqLCqQf2sJBoteOQ6nHikPKoNwMuoQqQATSAhusqe0KIUulMrsRyrijO5mkFxtouL1_2eHQ9ySPtHSvLJmMa9N1196fJ7Z5SKFiFoAwhRzuxqHNw0ndRrPkHxSpK2umMuH5Mwf8dqJ0ryw_ncpYtLv5xWEwNVSqRoYjCNplAj25UTLyI4VLKVb0T8w3q; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 13-Oct-2024 18:48:10 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 15-Oct-2016 18:48:10 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.74.8.134.1413485289947812; path=/; expires=Sat, 08-Oct-44 18:48:09 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE6.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D3910287444; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.74.8.46.1413485289937382; path=/; expires=Sat, 08-Oct-44 18:48:09 GMT
+Set-Cookie: AKDC=slc-b-origin-www-1.paypal.com; expires=Thu, 16-Oct-2014 19:18:10 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+
+2014-10-16 18:48:08
+message: _processIPN valid_ipn:VERIFIED
+
+2014-10-16 18:48:08
+message: plgVmOnPaymentNotification return new_status:C
+
+2014-10-16 18:48:08
+message: Notification: emptyCart c7c1db3937cdc3d7b97760d4a5c0f9d0
+
+2014-10-23 12:20:40
+message: plgVmConfirmedOrder order number: 304d047
+
+2014-10-23 12:22:34
+message: paypal_data 170.94   304d047   Eligible   confirmed   KCH6WK9GF3DPA   0.00   3411 Walnut Bend Ln
+Apt 1018   05:22:19 Oct 23, 2014 PDT   Completed   windows-1253   77042-4809   Charles   7.02   US   Charles Sandmann   3.8   22b5b6b0ef26f1b44545483044983d37   verified   salespaypal@in-case-of.com   United States   Houston   1   AsDivcffpRn0jFglGWkMer7w8OzsAQ4R-2YipyoA2EV.1akMnl7nb5Oq   atma_weapon_oni@hotmail.com   38X49731RK285984D   instant   Sandmann   TX   salespaypal@in-case-of.com      R5724U3JCWYYL   web_accept   Order Number: 304d047   EUR      US   0.00   22b5b6b0ef26f1b44545483044983d37      0.00   bf137874583dd
+
+2014-10-23 12:22:34
+message: checkPaypalIps: 23.32.247.31,173.0.81.33,173.0.81.1,216.113.188.202,216.113.188.203,216.113.188.204,66.211.170.66 server is:173.0.81.1
+
+2014-10-23 12:22:34
+message: checkPaypalIps:  OK
+
+2014-10-23 12:22:34
+message: _processIPN Fputs: POST /cgi-bin/webscr HTTP/1.0
+User-Agent: PHP/5.3.29
+Referer: in-case-of.com/index.phpoption=com_virtuemart&view=pluginresponse&task=pluginnotification&tmpl=component
+Server: Apache
+Host: www.paypal.com:443
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 1080
+Accept: */*
+
+cmd=_notify-validate&mc_gross=170.94&invoice=304d047&protection_eligibility=Eligible&address_status=confirmed&payer_id=KCH6WK9GF3DPA&tax=0.00&address_street=3411+Walnut+Bend+Ln%0D%0AApt+1018&payment_date=05%3A22%3A19+Oct+23%2C+2014+PDT&payment_status=Completed&charset=windows-1253&address_zip=77042-4809&first_name=Charles&mc_fee=7.02&address_country_code=US&address_name=Charles+Sandmann&notify_version=3.8&custom=22b5b6b0ef26f1b44545483044983d37&payer_status=verified&business=salespaypal%40in-case-of.com&address_country=United+States&address_city=Houston&quantity=1&verify_sign=AsDivcffpRn0jFglGWkMer7w8OzsAQ4R-2YipyoA2EV.1akMnl7nb5Oq&payer_email=atma_weapon_oni%40hotmail.com&txn_id=38X49731RK285984D&payment_type=instant&last_name=Sandmann&address_state=TX&receiver_email=salespaypal%40in-case-of.com&payment_fee=&receiver_id=R5724U3JCWYYL&txn_type=web_accept&item_name=Order+Number%3A+304d047&mc_currency=EUR&item_number=&residence_country=US&handling_amount=0.00&transaction_subject=22b5b6b0ef26f1b44545483044983d37&payment_gross=&shipping=0.00&ipn_track_id=bf137874583dd
+
+2014-10-23 12:22:34
+message: _processIPN FROM IPN VALIDATION:HTTP/1.0 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html; charset=UTF-8
+DC: slc-b-origin-www-2.paypal.com
+Date: Thu, 23 Oct 2014 12:22:35 GMT
+Content-Length: 8
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=T9mgNLagg3U0oVuKYYlBV0-Gp4rYCucb5d5Uk6RgqsibMOu5M-pn7mZxIJ8hZhpkYKClJXexFb9YXkMuwGAnq7CnjSPELu1iPiehRUWbkQuL_kwLGqA3x39advyqoOqdfwmegI5gY8nhT1cLpKS2NVPlpVQaqM6VqlAVLhl-7jdGuNjBGkgnIkqBsYGy79qKA7p4QywHk8V3r78LlGEXTC-gPcJHzUPKYsrEhOnwiLtpetEGWNEZimVc0gl7vL7C-ocvpoqyc7EFYh1TFZQW3NOABoCT77vm-S9EeLfw_XmdEW8hPjhx_ELpczQPfKqP3vQqlrWdNYbpVXRgcWDKIKvoQNhppuvKGfONi6WhvU8A4fyqL46o8OPyetH5YbnYK5nkAvWhmnDsBfuFGm4R6LxnBYvbKV7FPAlZLRgRo-XN25FoEMTsMlSysuO; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 20-Oct-2024 12:22:35 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 22-Oct-2016 12:22:35 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.74.8.134.1414066955296211; path=/; expires=Sat, 15-Oct-44 12:22:35 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE6.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D200493140; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.74.8.58.1414066955285703; path=/; expires=Sat, 15-Oct-44 12:22:35 GMT
+Set-Cookie: AKDC=slc-b-origin-www-2.paypal.com; expires=Thu, 23-Oct-2014 12:52:35 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+
+2014-10-23 12:22:34
+message: _processIPN valid_ipn:VERIFIED
+
+2014-10-23 12:22:34
+message: plgVmOnPaymentNotification return new_status:C
+
+2014-10-23 12:22:34
+message: Notification: emptyCart 22b5b6b0ef26f1b44545483044983d37
+
+2014-10-25 13:50:18
+message: plgVmConfirmedOrder order number: 49c9048
+
+2014-10-25 13:51:27
+message: plgVmConfirmedOrder order number: 691a049
+
+2014-10-25 13:54:17
+message: plgVmConfirmedOrder order number: 23d7050
+
+2014-10-25 13:56:10
+message: paypal_data 170.94   23d7050   Eligible   confirmed   LRTU44EK5BHJQ   0.00   201-A Glenmore Avenue   06:55:58 Oct 25, 2014 PDT   Completed   windows-1253   21228   John   7.02   US   John Chlumsky   3.8   549d1d6b1ff1a64fefeb43722bbd9214   verified   salespaypal@in-case-of.com   United States   Catonsville   1   A1CanjYO9Kf7tc-k.t9TL3TObCimAaeXeQturGkheshyVtwk7ceG53Kj   not22bad@yahoo.com   7MS82120DF2106733   instant   Chlumsky   MD   salespaypal@in-case-of.com      R5724U3JCWYYL   web_accept   Order Number: 23d7050   EUR      US   0.00   549d1d6b1ff1a64fefeb43722bbd9214      0.00   d960bc59a3bba
+
+2014-10-25 13:56:10
+message: checkPaypalIps: 23.32.247.31,173.0.81.33,173.0.81.1,216.113.188.202,216.113.188.203,216.113.188.204,66.211.170.66 server is:173.0.81.1
+
+2014-10-25 13:56:10
+message: checkPaypalIps:  OK
+
+2014-10-25 13:56:10
+message: _processIPN Fputs: POST /cgi-bin/webscr HTTP/1.0
+User-Agent: PHP/5.3.29
+Referer: in-case-of.com/index.phpoption=com_virtuemart&view=pluginresponse&task=pluginnotification&tmpl=component
+Server: Apache
+Host: www.paypal.com:443
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 1052
+Accept: */*
+
+cmd=_notify-validate&mc_gross=170.94&invoice=23d7050&protection_eligibility=Eligible&address_status=confirmed&payer_id=LRTU44EK5BHJQ&tax=0.00&address_street=201-A+Glenmore+Avenue&payment_date=06%3A55%3A58+Oct+25%2C+2014+PDT&payment_status=Completed&charset=windows-1253&address_zip=21228&first_name=John&mc_fee=7.02&address_country_code=US&address_name=John+Chlumsky&notify_version=3.8&custom=549d1d6b1ff1a64fefeb43722bbd9214&payer_status=verified&business=salespaypal%40in-case-of.com&address_country=United+States&address_city=Catonsville&quantity=1&verify_sign=A1CanjYO9Kf7tc-k.t9TL3TObCimAaeXeQturGkheshyVtwk7ceG53Kj&payer_email=not22bad%40yahoo.com&txn_id=7MS82120DF2106733&payment_type=instant&last_name=Chlumsky&address_state=MD&receiver_email=salespaypal%40in-case-of.com&payment_fee=&receiver_id=R5724U3JCWYYL&txn_type=web_accept&item_name=Order+Number%3A+23d7050&mc_currency=EUR&item_number=&residence_country=US&handling_amount=0.00&transaction_subject=549d1d6b1ff1a64fefeb43722bbd9214&payment_gross=&shipping=0.00&ipn_track_id=d960bc59a3bba
+
+2014-10-25 13:56:10
+message: _processIPN FROM IPN VALIDATION:HTTP/1.0 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html; charset=UTF-8
+DC: slc-b-origin-www-2.paypal.com
+Date: Sat, 25 Oct 2014 13:56:11 GMT
+Content-Length: 8
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=tvn23DMFRWPcWfeGS86WbYKbiPTt3bs7hRQOrgejp1zzrO4TdQP9n8FqVc1VHp-WWd0Ipydz70ZXlR9F7SxhsHg7NfDZuwyxbjFCtKDnzCJilqyeeQZepCov4VtFpl0ct9FS8ktq68wrEP-ZQ5P171cKUUFY3Dz0ig19wXSZzC6l1GxqNCKb9QCNX8Dug0LsK4BcX6aPCuAlOwkorBGliZhsuYJPoRc8MksEEgERmo4N9xPJmKIiCWDbItM63G3CsBDdTd1KAtqswAMaoA8YUUMkCnOWH_sTopeKMYeJhXxuSuzxM7enC0UsZVX1dfDmcqdnejFf-CeJLoxtywxN_lwjvsoZ-So4HEVhiiYpCyH5MD-yk8KswLlazcZbgHQ8Zlz2sA4CsQfZH97JkgV06wvEpHqrO8QzhmFXBC0ng9tHxxNjAXv2F2fBZzS; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Tue, 22-Oct-2024 13:56:11 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Mon, 24-Oct-2016 13:56:11 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.74.8.137.1414245370830906; path=/; expires=Mon, 17-Oct-44 13:56:10 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE6.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D4205529940; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.74.8.69.1414245370820489; path=/; expires=Mon, 17-Oct-44 13:56:10 GMT
+Set-Cookie: AKDC=slc-b-origin-www-2.paypal.com; expires=Sat, 25-Oct-2014 14:26:11 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+
+2014-10-25 13:56:10
+message: _processIPN valid_ipn:VERIFIED
+
+2014-10-25 13:56:10
+message: plgVmOnPaymentNotification return new_status:C
+
+2014-10-25 13:56:10
+message: Notification: emptyCart 549d1d6b1ff1a64fefeb43722bbd9214
+
+2014-10-26 09:53:08
+message: plgVmConfirmedOrder order number: 80fe051
+
+2014-10-26 09:54:12
+message: paypal_data 168.00   80fe051   Eligible   unconfirmed   9P9GN5V5V3Z4C   0.00   6 rue des Mriers   02:53:59 Oct 26, 2014 PDT   Completed   windows-1253   51220   Simon   6.06   FR   Simon BERKOVITCH   3.8   0763e976f8a8977e8b1c3a60188d56cb   verified   salespaypal@in-case-of.com   France   LOIVRE   1   A7i2Mg4o-DkokAf9WYv0OyiOf2e-Ao6LrX36H7aYQMbJG30jWGXIXy2L   simon.berko@orange.fr   6BS21400BH2293110   instant   BERKOVITCH      salespaypal@in-case-of.com      R5724U3JCWYYL   web_accept   Order Number: 80fe051   EUR      FR   0.00   0763e976f8a8977e8b1c3a60188d56cb      0.00   880299c0a06bc
+
+2014-10-26 09:54:12
+message: checkPaypalIps: 172.227.98.234,173.0.81.33,173.0.81.1,216.113.188.202,216.113.188.203,216.113.188.204,66.211.170.66 server is:173.0.81.1
+
+2014-10-26 09:54:12
+message: checkPaypalIps:  OK
+
+2014-10-26 09:54:12
+message: _processIPN Fputs: POST /cgi-bin/webscr HTTP/1.0
+User-Agent: PHP/5.3.29
+Referer: in-case-of.com/index.phpoption=com_virtuemart&view=pluginresponse&task=pluginnotification&tmpl=component
+Server: Apache
+Host: www.paypal.com:443
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 1047
+Accept: */*
+
+cmd=_notify-validate&mc_gross=168.00&invoice=80fe051&protection_eligibility=Eligible&address_status=unconfirmed&payer_id=9P9GN5V5V3Z4C&tax=0.00&address_street=6+rue+des+M%1Ariers&payment_date=02%3A53%3A59+Oct+26%2C+2014+PDT&payment_status=Completed&charset=windows-1253&address_zip=51220&first_name=Simon&mc_fee=6.06&address_country_code=FR&address_name=Simon+BERKOVITCH&notify_version=3.8&custom=0763e976f8a8977e8b1c3a60188d56cb&payer_status=verified&business=salespaypal%40in-case-of.com&address_country=France&address_city=LOIVRE&quantity=1&verify_sign=A7i2Mg4o-DkokAf9WYv0OyiOf2e-Ao6LrX36H7aYQMbJG30jWGXIXy2L&payer_email=simon.berko%40orange.fr&txn_id=6BS21400BH2293110&payment_type=instant&last_name=BERKOVITCH&address_state=&receiver_email=salespaypal%40in-case-of.com&payment_fee=&receiver_id=R5724U3JCWYYL&txn_type=web_accept&item_name=Order+Number%3A+80fe051&mc_currency=EUR&item_number=&residence_country=FR&handling_amount=0.00&transaction_subject=0763e976f8a8977e8b1c3a60188d56cb&payment_gross=&shipping=0.00&ipn_track_id=880299c0a06bc
+
+2014-10-26 09:54:12
+message: _processIPN FROM IPN VALIDATION:HTTP/1.0 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html; charset=UTF-8
+DC: slc-a-origin-www-2.paypal.com
+Date: Sun, 26 Oct 2014 09:54:14 GMT
+Content-Length: 8
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=4YF9tFQSBriPwJHG6WLL5whce4ga-m3rf0sPypmxKjDG1Sqvdl1naRDr2g0BhNwuvz3OwpNF1vVymjfBZHz7CAUj44UexJlQjwcy6hkGmTMEpj3iCTUvg3XbM3Ib6atzC1EKUL5AMPTN9ZdAg7y3mAGq1c7bKOuN8DQ0oB2kqI5Ra7PCUumhVplTSOvwCBCv7cZkpdEDTR9fGyCHmH5qnL0Sc9rreSNDqryiiDhXG3HA5U7T0JHXlqeHirMxiqCBEd9zY1lNq7uua71WzJUotlHp6FlIUGHs8rFoP7pNGjSaUujgLK7Ph1CoZMIG7QTbkwOooFwXhSO9pAx3hu-UwtcyLFmWYHdSuQeXXSD21k_1GPEIRGdDRVHBwAH4yPx4YdDR6T9ZMj0Xt-gdMI8GgqwJaersXPkmsydbP_qKUj513yjh6INwIBmDGUa; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Wed, 23-Oct-2024 09:54:14 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Tue, 25-Oct-2016 09:54:14 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.73.8.137.1414317253718822; path=/; expires=Tue, 18-Oct-44 09:54:13 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE5.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D3317976148; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.73.8.54.1414317253706851; path=/; expires=Tue, 18-Oct-44 09:54:13 GMT
+Set-Cookie: AKDC=slc-a-origin-www-2.paypal.com; expires=Sun, 26-Oct-2014 10:24:14 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+
+2014-10-26 09:54:12
+message: _processIPN valid_ipn:VERIFIED
+
+2014-10-26 09:54:12
+message: plgVmOnPaymentNotification return new_status:C
+
+2014-10-26 09:54:12
+message: Notification: emptyCart 0763e976f8a8977e8b1c3a60188d56cb
+
+2014-10-27 04:35:04
+message: plgVmConfirmedOrder order number: 0265052
+
+2014-10-27 04:35:34
+message: paypal_data 170.94   0265052   Eligible   confirmed   ZY3PNH6TALFA8   0.00   7700 F backlick rd   21:35:30 Oct 26, 2014 PDT   Completed   windows-1253   22150   duong   7.02   US   duong nguyen   3.8   bec697459f60062f594ba4df7d79d010   verified   salespaypal@in-case-of.com   United States   springfield   1   AGgn2vicjkfs0OLip747yAqeffGJAVs5qBxKquHIi0odTNsHONN8ZFpd   meatballfish@yahoo.com   2DB69792EF7331301   instant   nguyen   VA   salespaypal@in-case-of.com      R5724U3JCWYYL   web_accept   Order Number: 0265052   EUR      US   0.00   bec697459f60062f594ba4df7d79d010      0.00   d888503adb914
+
+2014-10-27 04:35:34
+message: checkPaypalIps: 23.32.247.31,173.0.81.33,173.0.81.1,216.113.188.202,216.113.188.203,216.113.188.204,66.211.170.66 server is:173.0.81.1
+
+2014-10-27 04:35:34
+message: checkPaypalIps:  OK
+
+2014-10-27 04:35:34
+message: _processIPN Fputs: POST /cgi-bin/webscr HTTP/1.0
+User-Agent: PHP/5.3.29
+Referer: in-case-of.com/index.phpoption=com_virtuemart&view=pluginresponse&task=pluginnotification&tmpl=component
+Server: Apache
+Host: www.paypal.com:443
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 1051
+Accept: */*
+
+cmd=_notify-validate&mc_gross=170.94&invoice=0265052&protection_eligibility=Eligible&address_status=confirmed&payer_id=ZY3PNH6TALFA8&tax=0.00&address_street=7700+F+backlick+rd&payment_date=21%3A35%3A30+Oct+26%2C+2014+PDT&payment_status=Completed&charset=windows-1253&address_zip=22150&first_name=duong&mc_fee=7.02&address_country_code=US&address_name=duong+nguyen&notify_version=3.8&custom=bec697459f60062f594ba4df7d79d010&payer_status=verified&business=salespaypal%40in-case-of.com&address_country=United+States&address_city=springfield&quantity=1&verify_sign=AGgn2vicjkfs0OLip747yAqeffGJAVs5qBxKquHIi0odTNsHONN8ZFpd&payer_email=meatballfish%40yahoo.com&txn_id=2DB69792EF7331301&payment_type=instant&last_name=nguyen&address_state=VA&receiver_email=salespaypal%40in-case-of.com&payment_fee=&receiver_id=R5724U3JCWYYL&txn_type=web_accept&item_name=Order+Number%3A+0265052&mc_currency=EUR&item_number=&residence_country=US&handling_amount=0.00&transaction_subject=bec697459f60062f594ba4df7d79d010&payment_gross=&shipping=0.00&ipn_track_id=d888503adb914
+
+2014-10-27 04:35:34
+message: _processIPN FROM IPN VALIDATION:HTTP/1.0 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html; charset=UTF-8
+DC: slc-a-origin-www-2.paypal.com
+Date: Mon, 27 Oct 2014 04:35:36 GMT
+Content-Length: 8
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=94WDe3rzQiL638sFkyxGcCY0WyU6wsNJxdm6_jV69Od1dBXqm3tzcAV63pzC24mkJYqp0jf-UOOy-ywuLdppGw312nFMExmmxlTYCMX9vgbK92XpeGJxo9HRzmNjv-hzERORuTAUIMWX3CcCBr_7zeAF6I-6Vusie2RS7IFn5wM78wpUUP1BtMTL90jWCosoPrdbsYWEsHKTw6jCpSqdPeVNvW-Bf9lHKtJha9_u5eyK9h5PJ_xn93SwsPBJl52FhibPGdIlBefxkkx6J4Np2Rki3YsUwQFUbbxfuq9kuVmCvFGNkroZE2HhOPS6UPpIJSXE-W3QjbmeLqeCun915xjM2nvITRNx96hP0kQjPWX536RhWLIPbV1oxpsACATDzUPQ1OxAT5qyxxuesvWV33kuUMOnLzciBHDHi8V-voCUFqZ4alMsE9Wa43u; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Thu, 24-Oct-2024 04:35:36 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Wed, 26-Oct-2016 04:35:36 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.73.8.137.1414384535815950; path=/; expires=Wed, 19-Oct-44 04:35:35 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE5.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D2546683220; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.73.8.70.1414384535804966; path=/; expires=Wed, 19-Oct-44 04:35:35 GMT
+Set-Cookie: AKDC=slc-a-origin-www-2.paypal.com; expires=Mon, 27-Oct-2014 05:05:36 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+
+2014-10-27 04:35:34
+message: _processIPN valid_ipn:VERIFIED
+
+2014-10-27 04:35:34
+message: plgVmOnPaymentNotification return new_status:C
+
+2014-10-27 04:35:34
+message: Notification: emptyCart bec697459f60062f594ba4df7d79d010
+
+2014-10-30 08:46:01
+message: plgVmConfirmedOrder order number: 6cd7053
+
+2014-10-30 08:46:59
+message: paypal_data 168.00   6cd7053   Eligible   confirmed   QLH2SV3EJFR2J   0.00   21 Jennings Rd   01:46:41 Oct 30, 2014 PDT   Completed   windows-1253   SE22 9JU   Eve   6.06   GB   Eve Gallagher   3.8   9cfb0a0d45fa983e00b336e524c8f2e6   verified   salespaypal@in-case-of.com   United Kingdom   East Dulwich   1   AoG8rmC-J8FjkI2pDsHCUmhD6-frAV64XCByl-Cz1EP26MMGc9BxP3FT   eve.gallagher@yahoo.co.uk   1MC95388CE515911S   instant   Gallagher      salespaypal@in-case-of.com      R5724U3JCWYYL   web_accept   Order Number: 6cd7053   EUR      GB   0.00   9cfb0a0d45fa983e00b336e524c8f2e6      0.00   2c7051ef704a
+
+2014-10-30 08:46:59
+message: checkPaypalIps: 23.32.247.31,173.0.81.1,173.0.81.33,216.113.188.202,216.113.188.203,216.113.188.204,66.211.170.66 server is:173.0.81.1
+
+2014-10-30 08:46:59
+message: checkPaypalIps:  OK
+
+2014-10-30 08:46:59
+message: _processIPN Fputs: POST /cgi-bin/webscr HTTP/1.0
+User-Agent: PHP/5.3.29
+Referer: in-case-of.com/index.phpoption=com_virtuemart&view=pluginresponse&task=pluginnotification&tmpl=component
+Server: Apache
+Host: www.paypal.com:443
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 1054
+Accept: */*
+
+cmd=_notify-validate&mc_gross=168.00&invoice=6cd7053&protection_eligibility=Eligible&address_status=confirmed&payer_id=QLH2SV3EJFR2J&tax=0.00&address_street=21+Jennings+Rd&payment_date=01%3A46%3A41+Oct+30%2C+2014+PDT&payment_status=Completed&charset=windows-1253&address_zip=SE22+9JU&first_name=Eve&mc_fee=6.06&address_country_code=GB&address_name=Eve+Gallagher&notify_version=3.8&custom=9cfb0a0d45fa983e00b336e524c8f2e6&payer_status=verified&business=salespaypal%40in-case-of.com&address_country=United+Kingdom&address_city=East+Dulwich&quantity=1&verify_sign=AoG8rmC-J8FjkI2pDsHCUmhD6-frAV64XCByl-Cz1EP26MMGc9BxP3FT&payer_email=eve.gallagher%40yahoo.co.uk&txn_id=1MC95388CE515911S&payment_type=instant&last_name=Gallagher&address_state=&receiver_email=salespaypal%40in-case-of.com&payment_fee=&receiver_id=R5724U3JCWYYL&txn_type=web_accept&item_name=Order+Number%3A+6cd7053&mc_currency=EUR&item_number=&residence_country=GB&handling_amount=0.00&transaction_subject=9cfb0a0d45fa983e00b336e524c8f2e6&payment_gross=&shipping=0.00&ipn_track_id=2c7051ef704a
+
+2014-10-30 08:46:59
+message: _processIPN FROM IPN VALIDATION:HTTP/1.0 200 OK
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html; charset=UTF-8
+DC: slc-a-origin-www-2.paypal.com
+Date: Thu, 30 Oct 2014 08:47:02 GMT
+Content-Length: 8
+Connection: close
+Set-Cookie: cwrClyrK4LoCV1fydGbAxiNL6iG=FiIEQsLJdF7XuZB5h9wKoYjJc7wan1r0_uB2-4MsWexSZoqDD56LNrRtKIugsColyYEVXRdZe-EjT9qm4SpLfEvTO8X_mkaoyndhBzAXopVtK6E2I0b9EVBmP-EFwuzXOpiUCctLcckc6cppq-ACZUV9Qzhp4DoGjly5KqatqJLfbhl0JKpVCix9cakc9f3EkGxoMDMLG3fPJFD1_yYTUFJVQczz-3ghpEnp3OGBhwvqzhP4JaqAgcvdz4zbQccIrK-K7g-YRxm_lx-K_Lr3vwWf_cEsID8kopSfqISg_A20SsxVdIDJkzCVvQaBIyUgDu56OhF5vnl9q_EOs8pkh6g8n1S2KhqEjwet5ptY4bsAzjrOvhC7Rf1b2Je4JYb-FASSqkTNTY1BWJULe4cj7H5KxJF1CiL7gOlG1We-ccyjlfKezvTGogomODS; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 27-Oct-2024 08:47:02 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 29-Oct-2016 08:47:02 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.73.8.134.1414658821728569; path=/; expires=Sat, 22-Oct-44 08:47:01 GMT
+Set-Cookie: X-PP-SILOVER=name%3DLIVE5.WEB.1%26silo_version%3D880%26app%3Dslingshot%26TIME%3D100356436; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.73.8.66.1414658821718212; path=/; expires=Sat, 22-Oct-44 08:47:01 GMT
+Set-Cookie: AKDC=slc-a-origin-www-2.paypal.com; expires=Thu, 30-Oct-2014 09:17:02 GMT; path=/; secure
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+
+2014-10-30 08:46:59
+message: _processIPN valid_ipn:VERIFIED
+
+2014-10-30 08:46:59
+message: plgVmOnPaymentNotification return new_status:C
+
+2014-10-30 08:46:59
+message: Notification: emptyCart 9cfb0a0d45fa983e00b336e524c8f2e6

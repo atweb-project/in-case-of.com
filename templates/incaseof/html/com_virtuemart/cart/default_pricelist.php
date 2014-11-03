@@ -240,7 +240,7 @@ foreach ($this->cart->products as $pkey => $prow) {
 if (VmConfig::get ('coupons_enable')) {
 	?>
 <tr class="sectiontableentry2">
-<td colspan="4" align="left">
+<td colspan="4" align="right">
 	<?php if (!empty($this->layoutName) && $this->layoutName == 'default') {
 	// echo JHTML::_('link', JRoute::_('index.php?view=cart&task=edit_coupon',$this->useXHTML,$this->useSSL), JText::_('COM_VIRTUEMART_CART_EDIT_COUPON'));
 	echo $this->loadTemplate ('coupon');
@@ -258,8 +258,8 @@ if (VmConfig::get ('coupons_enable')) {
 					 <?php if (VmConfig::get ('show_tax')) { ?>
 		<td align="right"><?php echo $this->currencyDisplay->createPriceDiv ('couponTax', '', $this->cart->pricesUnformatted['couponTax'], FALSE); ?> </td>
 		<?php } ?>
+	<td align="right"><?php echo $this->currencyDisplay->createPriceDiv ('salesPriceCoupon', '', $this->cart->pricesUnformatted['salesPriceCoupon'], FALSE); ?></td>
 	<td align="right">&nbsp;</td>
-	<td align="right"><?php echo $this->currencyDisplay->createPriceDiv ('salesPriceCoupon', '', $this->cart->pricesUnformatted['salesPriceCoupon'], FALSE); ?> </td>
 	<?php } else { ?>
 	<td colspan="6" align="left">&nbsp;</td>
 	<?php
@@ -399,7 +399,7 @@ foreach ($this->cart->cartData['DATaxRulesBill'] as $rule) {
 	<?php if (VmConfig::get ('show_tax')) { ?>
 	<td align="right"> <?php echo "<span  class='priceColor2'>" . $this->currencyDisplay->createPriceDiv ('billTaxAmount', '', $this->cart->pricesUnformatted['billTaxAmount'], FALSE) . "</span>" ?> </td>
 	<?php } ?>
-	<td align="right"> <?php echo "<span  class='priceColor2'>" . $this->currencyDisplay->createPriceDiv ('billDiscountAmount', '', $this->cart->pricesUnformatted['billDiscountAmount'], FALSE) . "</span>" ?> </td>
+	<td align="right"> <?php echo "<span  class='priceColor2'>" . $this->currencyDisplay->createPriceDiv ('billDiscountAmount', '', $this->cart->pricesUnformatted['billDiscountAmount'] - $this->cart->pricesUnformatted['salesPriceCoupon'], FALSE) . "</span>" ?> </td>
 	<td align="right"><strong><?php echo $this->currencyDisplay->createPriceDiv ('billTotal', '', $this->cart->pricesUnformatted['billTotal'], FALSE); ?></strong></td>
 </tr>
 <?php

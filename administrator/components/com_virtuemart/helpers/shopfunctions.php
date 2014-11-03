@@ -742,11 +742,12 @@ class ShopFunctions {
 			if(in_array($field['name'],$skips)) continue;
 			if (!empty($field['value'])) {
 				$vendorAddress .= $field['value'];
-				if ($field['name'] != 'title' and $field['name'] != 'first_name' and $field['name'] != 'middle_name' and $field['name'] != 'zip') {
+				//@Overridde Dimitris Kostaras
+				//if ($field['name'] != 'title' and $field['name'] != 'first_name' and $field['name'] != 'middle_name' and $field['name'] != 'zip') {
 					$vendorAddress .= $lineSeparator;
-				} else {
-					$vendorAddress .= ' ';
-				}
+				//} else {
+				//	$vendorAddress .= ' ';
+				//}
 			}
 		}
 		return $vendorAddress;
