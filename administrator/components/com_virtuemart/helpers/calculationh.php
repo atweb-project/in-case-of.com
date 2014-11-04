@@ -343,7 +343,8 @@ class calculationHelper {
 		$this->productPrices['salesPriceTemp'] = $this->productPrices['salesPrice'];
 		//Okey, this may not the best place, but atm we handle the override price as salesPrice
 		if ($override==1) {
-			$this->productPrices['salesPrice'] = $product_override_price;
+			//Override Change by Dimitris Kostaras
+			$this->productPrices['salesPrice'] = $product_override_price + $salesPrice - $costPrice;
 // 			$this->productPrices['discountedPriceWithoutTax'] = $this->product_override_price;
 // 			$this->productPrices['salesPriceWithDiscount'] = $this->product_override_price;
 		} else {

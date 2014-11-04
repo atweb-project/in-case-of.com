@@ -3972,3 +3972,6 @@ message: plgVmOnPaymentNotification return new_status:C
 
 2014-10-30 08:46:59
 message: Notification: emptyCart 9cfb0a0d45fa983e00b336e524c8f2e6
+
+2014-11-04 19:16:22
+message: plgVmConfirmedOrder order number: 0478054
